@@ -12,14 +12,9 @@ const Services = () => {
           Các khóa học Tại TD Marketsing danh cho ai?
         </p>
 
-        {/* Three grey divs resembling cards */}
         <div className="flex justify-center space-x-40 mt-10">
-          {" "}
-          {/* Adjust space between cards */}
           <div className="card">
             <div className="w-80 h-60 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
-              {" "}
-              {/* Increase width and height */}
               <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
                 <Image src={Vector} width={40} height={40} alt="Logo" />
               </div>
@@ -31,8 +26,6 @@ const Services = () => {
           </div>
           <div className="card">
             <div className="w-80 h-60 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
-              {" "}
-              {/* Increase width and height */}
               <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
                 <Image src={Vector} width={40} height={40} alt="Logo" />
               </div>
@@ -44,8 +37,6 @@ const Services = () => {
           </div>
           <div className="card">
             <div className="w-80 h-60 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
-              {" "}
-              {/* Increase width and height */}
               <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
                 <Image src={Vector} width={40} height={40} alt="Logo" />
               </div>

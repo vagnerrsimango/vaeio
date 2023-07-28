@@ -13,30 +13,25 @@ const Partner = () => {
           social netwwork, TMĐT
         </p>
 
-        {/* Use a flexbox container with a wrap to create a grid */}
         <div className="flex flex-wrap justify-center space-x-4">
-          {/* Partner Card 1 */}
           <div className="card w-64 h-48 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
             <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
               <Image src={Vector} width={40} height={40} alt="Logo" />
             </div>
           </div>
 
-          {/* Partner Card 2 */}
           <div className="card w-64 h-48 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
             <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
               <Image src={Vector} width={40} height={40} alt="Logo" />
             </div>
           </div>
 
-          {/* Partner Card 3 */}
           <div className="card w-64 h-48 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
             <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
               <Image src={Vector} width={40} height={40} alt="Logo" />
             </div>
           </div>
 
-          {/* Partner Card 4 */}
           <div className="card w-64 h-48 bg-primary-400 rounded-lg shadow-lg flex items-center justify-center">
             <div className="bg-gray-900 w-1/3 p-4 flex items-center justify-center">
               <Image src={Vector} width={40} height={40} alt="Logo" />

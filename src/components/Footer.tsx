@@ -1,41 +1,57 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  FaBeer,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
+import Logo from "@/lib/img/vaelogo.png";
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-8">
-      <div className="container mx-auto text-center">
-        <div className="mb-4">
-          <h2 className="text-3xl font-bold">Logo</h2>
-          <div className="mt-2">
-            <p className="text-sm">Random Line 1</p>
-            <p className="text-sm">Random Line 2</p>
-          </div>
-        </div>
+    <footer className="bg-black-500">
+      <div className="container text-primary-0 grid grid-cols-1 gap-8 px-6 py-10 mx-auto md:grid-cols-4">
+        <div className="space-y-8 md:space-y-12 md:items-start">
+          <b>LOGO</b>
 
-        <div className="grid grid-cols-4 gap-4 mt-4">
-          <div>
-            <p className="text-sm">Short Text 1</p>
-            <p className="text-sm">Short Text 2</p>
-            <p className="text-sm">Short Text 3</p>
-            <p className="text-sm">Short Text 4</p>
-          </div>
-          <div>
-            <p className="text-sm">Short Text 1</p>
-            <p className="text-sm">Short Text 2</p>
-            <p className="text-sm">Short Text 3</p>
-            <p className="text-sm">Short Text 4</p>
-          </div>
-          <div>
-            <p className="text-sm">Short Text 1</p>
-            <p className="text-sm">Short Text 2</p>
-            <p className="text-sm">Short Text 3</p>
-            <p className="text-sm">Short Text 4</p>
-          </div>
-          <div>
-            <p className="text-sm">Short Text 1</p>
-            <p className="text-sm">Short Text 2</p>
-            <p className="text-sm">Short Text 3</p>
-            <p className="text-sm">Short Text 4</p>
+          <p>
+            <FaMapMarkerAlt /> Av. Martires da Machava 252, 5o andar, flat 3
+            1100 MAPUTO
+          </p>
+          <p>
+            <FaMapMarkerAlt /> Av. 24 de Julho 133, 1o andar, flat 2 MAPUTO
+          </p>
+        </div>
+        <div className="space-y-8 md:space-y-12 md:items-start">
+          <p>Khóa học</p>
+          <p>Facebook Advertisement</p>
+          <p>Google Advertisement</p>
+          <p>Nuôi tài khoản Facebook</p>
+        </div>
+        <div className="space-y-8 md:space-y-12 md:items-start">
+          <p>Khóa học</p>
+          <p>Facebook Advertisement</p>
+          <p>Google Advertisement</p>
+          <p>Nuôi tài khoản Facebook</p>
+        </div>
+        <div className="space-y-8 md:space-y-12 md:items-start">
+          <p>Join our community.</p>
+          <div className="flex space-x-4 text-white">
+            <Link href="https://www.linkedin.com/" passHref>
+              <FaLinkedin />
+            </Link>
+            <Link href="https://www.facebook.com/" passHref>
+              <FaFacebook />
+            </Link>
+            <Link href="https://www.instagram.com/" passHref>
+              <FaInstagram />
+            </Link>
+            <Link href="https://twitter.com/" passHref>
+              <FaTwitter />
+            </Link>
           </div>
         </div>
       </div>

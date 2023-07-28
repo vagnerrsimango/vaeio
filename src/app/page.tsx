@@ -1,3 +1,4 @@
+import React from "react";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
@@ -13,11 +14,13 @@ export default function Home() {
     <div className="bg-primary-0">
       <Navbar />
       <Hero />
-      <Intro />
-      <Services />
-      <Partner />
-      <Stack />
-      <About />
+      <div className="container mx-auto px-4 py-8">
+        <Intro />
+        <Services />
+        <Partner />
+        <Stack />
+        <About />
+      </div>
       <Footer />
     </div>
   );
