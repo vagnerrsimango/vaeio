@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Vector from "@/lib/img/vector.png";
-import { FaBeer } from "react-icons/fa";
 
 const About = () => {
   return (

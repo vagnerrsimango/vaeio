@@ -6,15 +6,15 @@ import Menu from "@/lib/img/menu.png";
 
 const Navbar = () => {
   return (
-    <nav className="relative bg-primary-0">
+    <nav className="relative bg-primary-0 sticky top-0">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <span className="text-black-500 font-bold text-xl mr-2">VAEIO</span>
-          <Image src={Logo} width={50} height={50} alt="Logo" />
+          <Image src={Logo} width={100} height={100} alt="Logo" />
+          <span className="text-black-500 font-bold text-3xl mr-2">VAEIO</span>
         </div>
 
         <div className="flex items-center">
-          <Image src={Menu} width={50} height={50} alt="Menu" />
+          <Image src={Menu} width={80} height={80} alt="Menu" />
         </div>
       </div>
     </nav>

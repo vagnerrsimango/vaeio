@@ -4,9 +4,9 @@ import Vector from "@/lib/img/vector.png";
 
 const Intro = () => {
   return (
-    <div className="container mx-auto px-12 py-24 flex items-center justify-center space-x-12">
-      <div className="bg-primary-400 w-96 h-80 rounded-lg shadow-lg flex items-center justify-center">
-        <div className="bg-gray-900 w-1/2 p-8 flex items-center justify-center">
+    <div className="flex gap-2  py-24 items-center justify-evenly">
+      <div className="bg-primary-400 w-2/6 h-96 rounded-lg shadow-lg flex items-center justify-center">
+        <div className="bg-gray-900  p-8 flex items-center justify-center">
           <Image src={Vector} width={80} height={80} alt="Logo" />
         </div>
       </div>

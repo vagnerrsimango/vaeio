@@ -14,7 +14,7 @@ export default function Home() {
     <div className="bg-primary-0">
       <Navbar />
       <Hero />
-      <div className="container mx-auto px-4 py-8">
+      <div className="px-4 py-8">
         <Intro />
         <Services />
         <Partner />
