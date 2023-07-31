@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'animate.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -21,3 +22,41 @@ body {
   background: 
     rgb(var(--background-start-rgb));
 }
+
+/* styles/globals.css */
+/* Add your custom animation classes here */
+.animated {
+  animation-duration: 4s;
+}
+
+/* Example: Fade In Animation */
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* Pulse Animation */
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

@@ -33,7 +33,7 @@ const Intro = () => {
             ligula odio quis magna.
           </p>
           <div className="mt-6">
-            <button className="bg-primary-400 px-6 py-3 rounded-md text-lg font-bold">
+            <button className="bg-primary-400 px-6 py-3 rounded-md text-lg font-bold animate__animated animate__pulse">
               Learn More
             </button>
           </div>

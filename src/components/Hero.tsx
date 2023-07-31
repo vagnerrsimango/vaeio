@@ -4,7 +4,7 @@ import Vector from "@/lib/img/vector.png";
 
 const Hero = () => {
   return (
-    <section className="bg-primary-500 py-8 md:py-12 h-[500px]">
+    <section className="bg-primary-500 py-8 md:py-12 h-[500px] animated fadeIn">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center px-6">
           <div className="flex items-center">
