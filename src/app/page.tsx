@@ -5,8 +5,8 @@ import Intro from "@/components/Intro";
 import Partner from "@/components/Partner";
 import Services from "@/components/Services";
 import Stack from "@/components/Stack";
-import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
