@@ -2,16 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Button from "./Button";
 import LogoWhiteText from "@/lib/img/logotext.svg";
-import Showcase2 from "@/lib/img/showcase2.svg";
-import Icon1 from "@/lib/img/icon1.svg";
-import Icon2 from "@/lib/img/icon2.svg";
-import Icon3 from "@/lib/img/icon3.svg";
-import Icon4 from "@/lib/img/more.svg";
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-600 text-white py-8">
-      {/* Three Columns */}
+    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8">
       <div className="flex justify-around max-container">
         <div className="flex flex-col items-center">
           <Image src={LogoWhiteText} alt="Icon 1" width={172} height={54} />
@@ -39,6 +34,12 @@ const Footer = () => {
           <p className="regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
             Conecta-te à nós
           </p>
+          <div className="flex justify-center mt-4">
+            <FaTwitter className="text-2xl  text-primary-0 mx-2 cursor-pointer hover:text-blue-100" />
+            <FaFacebook className="text-2xl text-primary-0 mx-2 cursor-pointer hover:text-blue-100" />
+            <FaInstagram className="text-2xl text-primary-0 mx-2 cursor-pointer hover:text-blue-100" />
+            <FaLinkedin className="text-2xl text-primary-0 mx-2 cursor-pointer hover:text-blue-100" />
+          </div>
         </div>
       </div>
 

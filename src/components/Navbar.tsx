@@ -6,7 +6,7 @@ import Menu from "@/lib/img/menu.svg";
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween bg-blue-500 max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween bg-gradient-to-r from-gradient-200 via-blue-400 to-gradient-100 max-container padding-container relative z-30 py-5">
       <Link href="/">
         <Image
           src={LogoWhite}

@@ -5,13 +5,15 @@ type ButtonProps = {
   title: string;
   icon?: string | React.ReactNode;
   full?: boolean;
+  onClick?: () => void;
 };
 
-const Button = ({ type, title, icon, full }: ButtonProps) => {
+const Button = ({ type, title, icon, full, onClick }: ButtonProps) => {
   return (
     <button
       className={`flexCenter gap-4 mr-6 h-10 bg-blue-400   ${full && "w-full"}`}
       type={type}
+      onClick={onClick}
     >
       {icon && (
         <Image src={icon} alt={title} width={40} height={40} className="ml-4" />
