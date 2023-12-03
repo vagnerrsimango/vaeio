@@ -134,7 +134,7 @@ const Guide = () => {
             alt="logo"
             width={400}
             height={400}
-            className="object-cover"
+            className="object-cover flex justify-center align-middle"
           />
         </div>
       </div>
