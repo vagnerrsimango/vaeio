@@ -20,7 +20,7 @@ const Guide = () => {
     window.alert("Button clicked!");
   };
 
-  const handleTabChange = (newTab) => {
+  const handleTabChange = (newTab: string) => {
     setTab(newTab);
     updateSelectBtn(newTab);
   };
