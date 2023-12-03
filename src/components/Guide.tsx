@@ -13,7 +13,7 @@ import Button2 from "./Button2";
 import { useState } from "react";
 
 const Guide = () => {
-  const [selectBtn, setSelectBtn] = useState(Showcase1);
+  const [selectBtn, setSelectBtn] = useState(Showcase2);
   const [tab, setTab] = useState("primula");
 
   const handleBtnClick = () => {
