@@ -25,7 +25,7 @@ const Guide = () => {
     updateSelectBtn(newTab);
   };
 
-  const updateSelectBtn = (tab) => {
+  const updateSelectBtn = (tab: string) => {
     switch (tab) {
       case "primula":
         setSelectBtn(Showcase2);
