@@ -119,7 +119,7 @@ const Guide = () => {
               </p>
               <p className="text-primary-0 mb-6">
                 Consultoria Empresarial | Estratégias de Crescimento |
-                Otimização de Processos | Etc.
+                Otimização de Processos | Etcetera.
               </p>
             </div>
           ) : null}
