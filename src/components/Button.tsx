@@ -11,7 +11,9 @@ type ButtonProps = {
 const Button = ({ type, title, icon, full, onClick }: ButtonProps) => {
   return (
     <button
-      className={`flexCenter gap-4 mr-6 h-10 bg-blue-400   ${full && "w-full"}`}
+      className={`flexCenter gap-4 mr-6 h-10 bg-blue-400 ${
+        full && "w-full"
+      } sm:mr-0 sm:mb-2 sm:h-auto`}
       type={type}
       onClick={onClick}
     >

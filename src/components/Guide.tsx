@@ -15,6 +15,7 @@ import { useState } from "react";
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
   const [tab, setTab] = useState("primula");
+  const [clickedButton, setClickedButton] = useState(null);
 
   const handleBtnClick = () => {
     window.alert("Button clicked!");
@@ -71,7 +72,9 @@ const Guide = () => {
           </div>
           {tab === "primula" ? (
             <div>
-              <p className="text-primary-0 font-bold mb-6">O Que É Prímula?</p>
+              <p className="text-primary-0 text-2xl font-bold mb-6">
+                O Que É Prímula?
+              </p>
               <p className="text-primary-0 mb-6">
                 O Prímula é uma plataforma de gestão de negócios desenvolvida
                 para pequenas e médias empresas.
@@ -86,49 +89,37 @@ const Guide = () => {
             </div>
           ) : tab === "solutionti" ? (
             <div>
-              <p className="text-primary-0 font-bold mb-6">
-                Quais São As Nossas Soluções TI?
+              <p className="text-primary-0 text-2xl font-bold mb-6">
+                O Que Oferecemos Em TI?
               </p>
               <p className="text-primary-0 mb-6">
-                É a nossa oferta completa de tecnologia da informação,
-                proporcionando websites comerciais e corporativos, aplicativos
-                para celulares, sistemas de gestão para empresas, arquitetura de
-                softwares e muito mais.
-              </p>
-              <p className="text-primary-0 font-bold mb-6">
-                Principais Módulos
-              </p>
-              <p className="text-primary-0 mb-6">
-                Desenvolvimento Web | Desenvolvimento de Aplicativos | Gestão de
-                Sistemas | Arquitetura de Softwares | Etc.
+                Websites Comerciais & Corporativos | Aplicativos para celulares
+                | Sistemas de gestão para empresas | Arquitetura de Softwares |
+                e MUITO mais.
               </p>
             </div>
           ) : tab === "consultoria" ? (
             <div>
-              <p className="text-primary-0 font-bold mb-6">
-                Que Tipo de Consultoria Oferecemos?
+              <p className="text-primary-0 text-2xl font-bold mb-6">
+                Deixe a sua gestão conosco
               </p>
               <p className="text-primary-0 mb-6">
-                A consultoria oferece serviços especializados para ajudar sua
-                empresa a crescer e prosperar. Utilizamos abordagens modernas e
-                eficazes para proporcionar soluções personalizadas. Use "client"
-                para uma consultoria personalizada.
-              </p>
-              <p className="text-primary-0 font-bold mb-6">
-                Principais Serviços
+                Nossa expertise em gestão financeira, combinada ao compromisso
+                inabalável com o sucesso de nossos clientes, você pode confiar
+                em nós para fornecer soluções financeiras inteligentes e
+                estratégicas que impulsionarão sua estabilidade financeira e o
+                crescimento de seus negócios.
               </p>
               <p className="text-primary-0 mb-6">
-                Consultoria Empresarial | Estratégias de Crescimento |
-                Otimização de Processos | Etcetera.
+                Entre em contato connosco hoje mesmo para começar a trilhar o
+                caminho para uma gestão financeira sólida e eficaz.
               </p>
             </div>
           ) : null}
           <Button2 type="button" title="Saber Mais" icon={Icon4} />
         </div>
 
-        {/* Right Side */}
         <div className="lg:w-1/2 p-8">
-          {/* Just the logo for now */}
           <Image
             src={selectBtn}
             alt="logo"
