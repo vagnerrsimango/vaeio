@@ -5,6 +5,7 @@ type ButtonProps = {
   title: string;
   icon?: string;
   full?: boolean;
+  className?: string;
   onClick?: () => void;
 };
 

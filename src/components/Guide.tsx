@@ -15,7 +15,6 @@ import { useState } from "react";
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
   const [tab, setTab] = useState("primula");
-  const [clickedButton, setClickedButton] = useState(null);
 
   const handleBtnClick = () => {
     window.alert("Button clicked!");
@@ -56,6 +55,11 @@ const Guide = () => {
               title="Prímula"
               icon={Icon1}
               onClick={() => handleTabChange("primula")}
+              className={`transition-all duration-300 ease-in-out ${
+                tab === "primula"
+                  ? "bg-gray-800 text-white"
+                  : "bg-gray-200 text-black"
+              } p-2 rounded-md`}
             />
             <Button
               type="button"
