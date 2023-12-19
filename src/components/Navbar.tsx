@@ -1,10 +1,19 @@
+"use client";
+import { useState } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import LogoWhite from "@/lib/img/logo-white.svg";
-import Menu from "@/lib/img/menu.svg";
+import { Menu } from "@headlessui/react";
+import MenuIcon from "@/lib/img/menu.svg";
 
 const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 w-full bg-gradient-to-r from-gradient-200 via-blue-400 to-gradient-100 z-30">
       <div className="max-container padding-container mt-4">
@@ -19,7 +28,11 @@ const Navbar = () => {
             />
           </Link>
 
-          <ul className="hidden h-full gap-12 lg:flex">
+          <ul
+            className={`hidden h-full gap-12 lg:flex ${
+              isMenuOpen ? "hidden" : ""
+            }`}
+          >
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
                 {link.key === "primula" ? (
@@ -41,14 +54,47 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
-          <Image
-            src={Menu}
-            alt="menu"
-            width={32}
-            height={32}
-            className="inline-block cursor-pointer lg:flexCenter mr-16"
-          />
+          <Menu>
+            {isMenuOpen && (
+              <Menu.Items className="absolute top-full right-0 mt-2 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      className={`${
+                        active ? "bg-blue-500 text-primary-0" : "text-gray-800"
+                      } group flex items-center px-4 py-2 text-sm`}
+                      href="/account-settings"
+                    >
+                      Módulo 1
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      className={`${
+                        active ? "bg-blue-500 text-primary-0" : "text-gray-800"
+                      } group flex items-center px-4 py-2 text-sm`}
+                      href="/documentation"
+                    >
+                      Modulo 2
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item disabled>
+                  <span className="opacity-75 px-4 py-2 text-sm">
+                    Módulo 3 (Brevemente!)
+                  </span>
+                </Menu.Item>
+              </Menu.Items>
+            )}
+            <Menu.Button
+              className="px-4 py-2 text-sm font-medium text-primary-0 bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75"
+              onClick={toggleMenu}
+            >
+              <Image src={MenuIcon} alt="logo" className="ml-16" />
+            </Menu.Button>
+          </Menu>
         </div>
       </div>
     </nav>
