@@ -6,16 +6,22 @@ import Link from "next/link";
 import LogoWhite from "@/lib/img/logo-white.svg";
 import { Menu } from "@headlessui/react";
 import MenuIcon from "@/lib/img/menu.svg";
+import useNavScroll from "@/hooks/useNavScroll";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
+  const { scroll } = useNavScroll();
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  console.log(scroll);
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full bg-gradient-to-r from-gradient-200 via-blue-400 to-gradient-100 z-30">
+    <nav
+      className={`fixed shadow-sm ${
+        scroll > 0 ? "bg-black-500  transition-colors shadow-black-400" : ""
+      }  top-0 left-0 right-0 w-full z-30`}
+    >
       <div className="max-container padding-container mt-4">
         <div className="flex items-center justify-between">
           <Link href="/">
@@ -24,7 +30,7 @@ const Navbar = () => {
               alt="logo"
               width={74}
               height={29}
-              className="ml-16"
+              className="ml-16 mb-2"
             />
           </Link>
 

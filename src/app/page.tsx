@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <div className="flex-grow">
         <Navbar />
-        <HeroPrimula />
-        <GuidePrimula />
-        {/* <Portfolio />
-        <Clients /> */}
-        <FooterPrimula />
+        <Hero />
+        <Guide />
+        <Portfolio />
+        <Clients />
+        <Footer />
       </div>
     </>
   );
