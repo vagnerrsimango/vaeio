@@ -43,7 +43,7 @@ const Navbar = () => {
               <li key={link.key}>
                 {link.key === "primula" ? (
                   <Link
-                    href="src\app\components\hero.tsx"
+                    href="/primula"
                     className="regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
                   >
                     {link.label}

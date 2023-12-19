@@ -54,12 +54,13 @@ const Guide = () => {
               type="button"
               title="Prímula"
               icon={Icon1}
+              bg={
+                tab == "primula"
+                  ? "bg-blue-600 shadow shadow-green-500"
+                  : "bg-blue-400"
+              }
               onClick={() => handleTabChange("primula")}
-              className={`transition-all duration-300 ease-in-out ${
-                tab === "primula"
-                  ? "bg-gray-800 text-white"
-                  : "bg-gray-200 text-black"
-              } p-2 rounded-md`}
+              className={`transition-all duration-300 ease-in-out  p-2 rounded-md`}
             />
             <Button
               type="button"
