@@ -3,15 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Circles from "@/lib/img/circles+icons.svg";
 import Logo from "@/lib/img/vaeio.png";
+import "@/app/styles/animations.css";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 max-container padding-container items-center justify-center  flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row ">
+    <section className="bg-gradient-to-r from-blue-500 to-blue-700 max-container padding-container items-center justify-center  flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row animate-fade-in-up">
       <Link href="/">
-        <div className="relative">
+        <div className="relative transition-all duration-500 transform-gpu hover:scale-110">
           <Image src={Circles} alt="logo" width={400} height={400} />
 
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center transition-all duration-500 ">
             <p className="text-primary-0 text-3xl font-bold">
               SOLUÇÕES PARA O SEU <p className="text-green-400 ">NEGÓCIO</p>
             </p>
@@ -20,7 +21,7 @@ const Hero = () => {
               alt="logo"
               width={200}
               height={200}
-              className="mt-4"
+              className="mt-4 transition-all duration-500 hover:scale-110"
             />
           </div>
         </div>

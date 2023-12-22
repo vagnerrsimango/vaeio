@@ -11,6 +11,8 @@ import Icon3 from "@/lib/img/icon3.svg";
 import Icon4 from "@/lib/img/DropdownIcon.svg";
 import Button2 from "./Button2";
 import { useState } from "react";
+import "animate.css";
+import "@/app/styles/animations.css";
 
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
@@ -43,12 +45,12 @@ const Guide = () => {
 
   return (
     <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
-      <p className="text-primary-0 text-3xl font-bold">
+      <p className="text-primary-0 text-3xl font-bold animate__animated animate__fadeIn">
         CONHEÇA AS NOSSAS SOLUÇÕES PARA A SUA EMPRESA
       </p>
 
       <div className="flex flex-col-reverse lg:flex-row w-full mt-8 p-8">
-        <div className="lg:w-1/2 p-8">
+        <div className="lg:w-1/2 p-8 animate__animated animate__fadeInLeft">
           <div className="flex justify-between mb-6">
             <Button
               type="button"
@@ -87,7 +89,7 @@ const Guide = () => {
               <p className="text-primary-0 font-bold mb-6">
                 Principais Módulos
               </p>
-              <p className="text-primary-0 mb-6">
+              <p className="text-primary-0 mb-6 transition-all duration-300">
                 Compras | POS | Comercial | Recursos Humanos | Contabilidade |
                 Finanças
               </p>
@@ -124,14 +126,16 @@ const Guide = () => {
           <Button2 type="button" title="Saber Mais" icon={Icon4} />
         </div>
 
-        <div className="lg:w-1/2 p-8">
-          <Image
-            src={selectBtn}
-            alt="logo"
-            width={400}
-            height={400}
-            className="object-cover flex justify-center align-middle"
-          />
+        <div className="lg:w-1/2 p-8 animate__animated animate__fadeInRight">
+          <div className="max-w-400 max-h-400 overflow-hidden">
+            <Image
+              src={selectBtn}
+              alt="logo"
+              width={400}
+              height={400}
+              className="object-cover flex justify-center align-middle"
+            />
+          </div>
         </div>
       </div>
     </section>

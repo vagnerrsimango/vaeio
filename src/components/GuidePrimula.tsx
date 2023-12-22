@@ -4,6 +4,7 @@ import logo2 from "@/lib/img/modlog2.svg";
 import logo3 from "@/lib/img/modlog3.svg";
 import logo4 from "@/lib/img/modlog4.svg";
 import PrimulaCard from "./PrimulaCard";
+import "animate.css";
 
 const GuidePrimula = () => {
   return (
@@ -30,9 +31,7 @@ const GuidePrimula = () => {
           borderColor="purple-100"
           title="PRÍMULA"
           subtitle="MÓDULO RECURSOS HUMANOS"
-          description="Além de gestão de Recursos Humanos eficaz, permite a gestão de informações dos
-          colaboradores, o processamento de salários e a optimização de processos de recrutamento e
-          seleção."
+          description="Além de gestão de Recursos Humanos eficaz, permite a gestão de informações dos colaboradores, o processamento de salários e a optimização de processos de recrutamento e seleção."
         />
 
         <PrimulaCard
@@ -40,8 +39,7 @@ const GuidePrimula = () => {
           borderColor="purple-100"
           title="PRÍMULA"
           subtitle="MÓDULO CONTABILIDADE"
-          description="Permite que as empresas façam a gestão das suas finanças, cumprir com as obrigações fiscais e manter um controle rigoroso de suas operações
-          contábeis."
+          description="Permite que as empresas façam a gestão das suas finanças, cumprir com as obrigações fiscais e manter um controle rigoroso de suas operações contábeis."
         />
 
         <PrimulaCard
@@ -49,8 +47,7 @@ const GuidePrimula = () => {
           borderColor="purple-100"
           title="PRÍMULA"
           subtitle="MÓDULO POS"
-          description="Permite rastrear todas as transações,
-          manter registos precisos e oferecer aos clientes informações claras e organizadas sobre suas compras."
+          description="Permite rastrear todas as transações, manter registos precisos e oferecer aos clientes informações claras e organizadas sobre suas compras."
         />
       </div>
     </section>

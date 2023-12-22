@@ -30,7 +30,7 @@ const Navbar = () => {
               alt="logo"
               width={74}
               height={29}
-              className="ml-16 mb-2"
+              className="ml-16 mb-2 hover:scale-110  "
             />
           </Link>
 
@@ -98,7 +98,11 @@ const Navbar = () => {
               className="px-4 py-2 text-sm font-medium text-primary-0 bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75"
               onClick={toggleMenu}
             >
-              <Image src={MenuIcon} alt="logo" className="ml-16" />
+              <Image
+                src={MenuIcon}
+                alt="logo"
+                className="ml-16 hover:scale-110 "
+              />
             </Menu.Button>
           </Menu>
         </div>
