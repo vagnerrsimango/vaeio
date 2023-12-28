@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import logo1 from "@/lib/img/modlog1.svg";
 import logo2 from "@/lib/img/modlog2.svg";

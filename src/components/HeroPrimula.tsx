@@ -14,7 +14,6 @@ const HeroPrimula = () => {
           </p>
           <div className="flex flex-col items-center">
             {" "}
-            {/* New container for centering */}
             <p className="text-white text-4xl md:text-3xl lg:text-3xl font-medium">
               <span className="text-primary-0 text-6xl font-medium">
                 Pequenas

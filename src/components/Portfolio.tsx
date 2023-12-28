@@ -15,7 +15,6 @@ const Portfolio = () => {
       </p>
 
       <div className="flex mt-8 p-8">
-        {/* Left side - Image */}
         <div className="w-1/2 flex justify-center items-center">
           <Image
             className="object-cover w-full h-full"
@@ -24,7 +23,6 @@ const Portfolio = () => {
           />
         </div>
 
-        {/* Right side - Content */}
         <div className="w-1/2 bg-white p-8">
           <div className="flex flex-col items-start">
             <p className="text-primary-0 text-3xl mb-4">GEOME</p>
