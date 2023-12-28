@@ -62,12 +62,12 @@ const Navbar = () => {
           </ul>
           <Menu>
             {isMenuOpen && (
-              <Menu.Items className="absolute top-full right-0 mt-2 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute top-full right-0 mt-2 bg-white border border-gray-300 divide-y divide-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <Menu.Item>
                   {({ active }) => (
                     <a
                       className={`${
-                        active ? "bg-blue-500 text-primary-0" : "text-gray-800"
+                        active ? "bg-blue-500 text-primary-0" : "text-primary-0"
                       } group flex items-center px-4 py-2 text-sm`}
                       href="/account-settings"
                     >
@@ -79,7 +79,7 @@ const Navbar = () => {
                   {({ active }) => (
                     <a
                       className={`${
-                        active ? "bg-blue-500 text-primary-0" : "text-gray-800"
+                        active ? "bg-blue-500 text-primary-0" : "text-primary-0"
                       } group flex items-center px-4 py-2 text-sm`}
                       href="/documentation"
                     >
@@ -88,7 +88,7 @@ const Navbar = () => {
                   )}
                 </Menu.Item>
                 <Menu.Item disabled>
-                  <span className="opacity-75 px-4 py-2 text-sm">
+                  <span className="opacity-75 px-4 py-2 text-sm text-primary-0">
                     Módulo 3 (Brevemente!)
                   </span>
                 </Menu.Item>
@@ -101,7 +101,7 @@ const Navbar = () => {
               <Image
                 src={MenuIcon}
                 alt="logo"
-                className="ml-16 hover:scale-110 "
+                className="ml-16 hover:scale-110"
               />
             </Menu.Button>
           </Menu>

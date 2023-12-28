@@ -20,7 +20,7 @@ const GuidePrimula = () => {
       <div className="grid grid-cols-3 gap-6">
         <PrimulaCard
           icon={logo1}
-          borderColor="purple-100"
+          borderColor="purple-500"
           title="PRÍMULA"
           subtitle="MÓDULO FINANÇAS"
           description="Fornece às empresas as ferramentas necessárias para gerir eficazmente as suas operações financeiras, monitorizar os fluxos de tesouraria e tomar decisões informadas com base em dados financeiros precisos."
