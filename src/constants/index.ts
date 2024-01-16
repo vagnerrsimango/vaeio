@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'primula', label: 'Prímula' },
-  { href: '/', key: 'itsolutions', label: 'Soluções IT' },
-  { href: '/', key: 'consulting', label: 'Consultoria' },
-  { href: '/', key: 'blog', label: 'Blog' }
+  { href: '/primula', key: 'primula', label: 'Prímula' },
+  { href: '/itsolutions', key: 'itsolutions', label: 'Soluções IT' },
+  { href: '/consultoria', key: 'consulting', label: 'Consultoria' },
+  { href: '/blog', key: 'blog', label: 'Blog' }
 ];

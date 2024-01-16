@@ -1,18 +1,14 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import HeroPrimula from "@/components/HeroPrimula";
-import GuidePrimula from "@/components/GuidePrimula";
-import FooterPrimula from "@/components/FooterPrimula";
+import HeroPrimula from "@/components/primula/HeroPrimula";
+import GuidePrimula from "@/components/primula/GuidePrimula";
+import FooterPrimula from "@/components/primula/FooterPrimula";
 
 export default function Home() {
   return (
     <>
-      <div className="flex-grow">
-        <Navbar />
-        <HeroPrimula />
-        <GuidePrimula />
-        <FooterPrimula />
-      </div>
+      <HeroPrimula />
+      <GuidePrimula />
     </>
   );
 }

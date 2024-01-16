@@ -5,7 +5,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const FooterPrimula = () => {
   return (
-    <footer className="bg-gradient-to-r from-purple-200 to-purple-800 text-white py-8">
+    <footer className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-8">
       <div className="flex justify-around max-container">
         <div className="flex flex-col items-center hover:scale-110">
           <Image src={LogoWhiteText} alt="Icon 1" width={172} height={54} />

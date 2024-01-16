@@ -25,7 +25,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={outfit.className}>
-          <main className="relative overflow-hidden">{children}</main>
+          <div className="container">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

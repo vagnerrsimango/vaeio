@@ -4,12 +4,12 @@ import logo1 from "@/lib/img/modlog1.svg";
 import logo2 from "@/lib/img/modlog2.svg";
 import logo3 from "@/lib/img/modlog3.svg";
 import logo4 from "@/lib/img/modlog4.svg";
-import PrimulaCard from "./PrimulaCard";
+import PrimulaCard from "./ISCard";
 import "animate.css";
 
 const GuidePrimula = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-200 to-purple-600 min-h-screen flex flex-col items-center justify-center text-center">
+    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
       <p className="text-green-300 mt-8 text-3xl font-bold mb-4">
         MÓDULOS DO PRIMULA
       </p>

@@ -5,44 +5,46 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8">
-      <div className="flex justify-around max-container">
-        <div className="flex flex-col items-center hover:scale-125">
-          <Image src={LogoWhiteText} alt="Icon 1" width={172} height={54} />
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center">
-            <p className="regular-16 hover:font-bold text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all ">
-              Soluções
-            </p>
-
-            <p className="regular-10 text-primary-0 hover:font-bold flexCenter cursor-pointer pb-1.5 transition-all ">
-              Prímula
-            </p>
-            <p className="regular-10 text-primary-0 hover:font-bold flexCenter cursor-pointer pb-1.5 transition-all ">
-              T.I
-            </p>
-            <p className="regular-10 text-primary-0 hover:font-bold flexCenter cursor-pointer pb-1.5 transition-all ">
-              Consultoria
-            </p>
-          </div>
+    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 max-w-[1280px] text-primary-0 text-center">
+      <div className="container flex items-center justify-between">
+        {/* Logo with spacing */}
+        <div className="flex items-center space-x-4 ml-8">
+          <Image src={LogoWhiteText} alt="Icon 1" width={100} height={32} />
         </div>
 
-        <div className="flex flex-col items-center">
-          <p className="regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
-            Conecta-te à nós
+        {/* Navigation Links with adjusted spacing for centralization */}
+        <div className="flex items-center space-x-4 ml-16">
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
+            Prímula
           </p>
-          <div className="flex justify-center mt-4">
-            <FaTwitter className="text-2xl   text-primary-0 mx-2 cursor-pointer hover:scale-125 " />
-            <FaFacebook className="text-2xl  text-primary-0 mx-2 cursor-pointer hover:scale-125 " />
-            <FaInstagram className="text-2xl  text-primary-0 mx-2 cursor-pointer hover:scale-125 " />
-            <FaLinkedin className="text-2xl  text-primary-0 mx-2 cursor-pointer hover:scale-125" />
-          </div>
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
+            Soluções T.I
+          </p>
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
+            Consultoria
+          </p>
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
+            Blog
+          </p>
         </div>
-      </div>
 
-      <div className="mt-4 text-center regular-16 text-primary-0 hover:scale-125 flexCenter cursor-pointer pb-1.5 transition-all ">
-        <p>&copy; 2023 VAE.IO. Todos os direitos são reservados.</p>
+        {/* Social Icons */}
+        <div className="flex items-center space-x-4 ml-auto">
+          <FaTwitter className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
+          <FaFacebook className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
+          <FaInstagram className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
+          <FaLinkedin className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
+        </div>
+
+        {/* Copyright, Terms and Conditions, Cookies on the right */}
+        <div className="flex items-center space-x-4 ml-auto mr-8">
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer ">
+            <a href="/terms">Termos e Condições | Cookies</a>
+          </p>
+          <p className="text-sm hover:font-bold text-primary-0">
+            &copy; 2023 VAE.IO. Todos os direitos reservados.
+          </p>
+        </div>
       </div>
     </footer>
   );

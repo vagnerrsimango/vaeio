@@ -68,12 +68,22 @@ const Guide = () => {
               type="button"
               title="Soluções TI"
               icon={Icon2}
+              bg={
+                tab == "solutionti"
+                  ? "bg-blue-600 shadow shadow-green-500"
+                  : "bg-blue-400"
+              }
               onClick={() => handleTabChange("solutionti")}
             />
             <Button
               type="button"
               title="Consultoria"
               icon={Icon3}
+              bg={
+                tab == "consultoria"
+                  ? "bg-blue-600 shadow shadow-green-500"
+                  : "bg-blue-400"
+              }
               onClick={() => handleTabChange("consultoria")}
             />
           </div>

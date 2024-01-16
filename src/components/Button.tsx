@@ -28,11 +28,13 @@ const Button = ({
       style={{ padding: "8px 16px" }}
     >
       {icon && (
-        <Image src={icon} alt={title} width={40} height={40} className="ml-4" />
+        <div className="flex items-center justify-center">
+          <Image src={icon} alt={title} width={40} height={40} />
+          <label className="bold-16 p-1 text-primary-0 whitespace-nowrap cursor-pointer">
+            {title}
+          </label>
+        </div>
       )}
-      <label className="bold-16 mr-4 text-primary-0 whitespace-nowrap cursor-pointer">
-        {title}
-      </label>
     </button>
   );
 };
