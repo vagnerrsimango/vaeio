@@ -13,6 +13,20 @@ import Button2 from "./Button2";
 import { useState } from "react";
 import "animate.css";
 import "@/app/styles/animations.css";
+import {
+  FaShoppingCart,
+  FaStore,
+  FaCreditCard,
+  FaUsers,
+  FaBook,
+  FaMoneyBill,
+  FaGlobe,
+  FaMobileAlt,
+  FaDesktop,
+  FaCogs,
+  FaDatabase,
+  FaMagic,
+} from "react-icons/fa";
 
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
@@ -88,32 +102,88 @@ const Guide = () => {
             />
           </div>
           {tab === "primula" ? (
-            <div>
-              <p className="text-primary-0 text-2xl font-bold mb-6">
-                O Que É Prímula?
-              </p>
-              <p className="text-primary-0 mb-6">
+            <div className="mb-6 text-primary-0">
+              <p className="text-2xl font-bold mb-6">O Que É Prímula?</p>
+              <p className="font-normal mb-6">
                 O Prímula é uma plataforma de gestão de negócios desenvolvida
                 para pequenas e médias empresas.
               </p>
-              <p className="text-primary-0 font-bold mb-6">
-                Principais Módulos
-              </p>
-              <p className="text-primary-0 mb-6 transition-all duration-300">
-                Compras | POS | Comercial | Recursos Humanos | Contabilidade |
-                Finanças
-              </p>
+              <p className="font-bold mb-6">Principais Módulos</p>
+
+              <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+                <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaShoppingCart size={24} className="mr-2 text-yellow-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">Compras</p>
+                  </div>
+                </div>
+                <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaStore size={24} className="mr-2 text-green-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">POS</p>
+                  </div>
+                </div>
+                <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaCreditCard size={24} className="mr-2 text-blue-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">Comercial</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+                <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaUsers size={24} className="mr-2 text-purple-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">Recursos Humanos</p>
+                  </div>
+                </div>
+                <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaBook size={24} className="mr-2 text-indigo-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">Contabilidade</p>
+                  </div>
+                </div>
+                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-pink-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                  <FaMoneyBill size={24} className="mr-2 text-pink-900" />
+                  <div>
+                    <p className="text-sm font-bold mb-1">Finanças</p>
+                  </div>
+                </div>
+              </div>
             </div>
           ) : tab === "solutionti" ? (
-            <div>
-              <p className="text-primary-0 text-2xl font-bold mb-6">
-                O Que Oferecemos Em TI?
-              </p>
-              <p className="text-primary-0 mb-6">
-                Websites Comerciais & Corporativos | Aplicativos para celulares
-                | Sistemas de gestão para empresas | Arquitetura de Softwares |
-                e MUITO mais.
-              </p>
+            <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                <FaGlobe size={40} className="mr-4 text-yellow-900" />
+                <div>
+                  <p className="text-xl font-bold mb-1">Websites Comerciais</p>
+                  <p className="text-sm">& Corporativos</p>
+                </div>
+              </div>
+              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                <FaMobileAlt size={40} className="mr-4 text-green-900" />
+                <div>
+                  <p className="text-xl font-bold mb-1">
+                    Aplicativos para Celulares
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                <FaDesktop size={40} className="mr-4 text-blue-900" />
+                <div>
+                  <p className="text-xl font-bold mb-1">Sistemas de Gestão</p>
+                  <p className="text-sm">para Empresas</p>
+                </div>
+              </div>
+              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                <FaCogs size={40} className="mr-4 text-purple-900" />
+                <div>
+                  <p className="text-xl font-bold mb-1">
+                    Arquitetura de Softwares
+                  </p>
+                </div>
+              </div>
             </div>
           ) : tab === "consultoria" ? (
             <div>

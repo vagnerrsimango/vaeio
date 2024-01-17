@@ -10,23 +10,23 @@ type ButtonProps = {
 const Button3 = ({ type, title, icon, full }: ButtonProps) => {
   return (
     <button
-      className={`flexCenter gap-4 mr-6 h-10 bg-blue-400 bg-opacity-10  ${
+      className={`flex items-center gap-4 mr-6 h-10 bg-blue-400 bg-opacity-10  ${
         full && "w-full"
       }`}
       type={type}
     >
-      <label className="bold-16 mr-4 ml-4 text-primary-0 whitespace-nowrap cursor-pointer">
-        {title}
-      </label>
       {icon && (
         <Image
           src={icon}
           alt={title}
           width={10}
           height={10}
-          className=" mr-4"
+          className="mr-4 ml-8"
         />
       )}
+      <label className="bold-16 text-primary-0 whitespace-nowrap cursor-pointer">
+        {title}
+      </label>
     </button>
   );
 };

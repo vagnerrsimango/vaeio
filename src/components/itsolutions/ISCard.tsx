@@ -1,3 +1,4 @@
+"use client";
 import { ImageProps } from "next/image";
 import React, { useEffect } from "react";
 import Image from "next/image";
@@ -12,7 +13,7 @@ interface PrimulaCardProps {
   description: string;
 }
 
-const PrimulaCard: React.FC<PrimulaCardProps> = ({
+const ISCard: React.FC<PrimulaCardProps> = ({
   icon,
   borderColor,
   title,
@@ -47,4 +48,4 @@ const PrimulaCard: React.FC<PrimulaCardProps> = ({
   );
 };
 
-export default PrimulaCard;
+export default ISCard;
