@@ -1,49 +1,31 @@
-"use client";
 import React from "react";
 import { FaCogs, FaDesktop, FaGlobe, FaMobileAlt } from "react-icons/fa";
+import ReactPlayer from "react-player";
 import "animate.css";
 import PrimulaCard from "./ISCard";
+import video from "@/lib/vid/speedflow.mp4";
 import logo1 from "@/lib/img/modlog1.svg";
 import logo2 from "@/lib/img/modlog2.svg";
 import logo3 from "@/lib/img/modlog3.svg";
 import logo4 from "@/lib/img/modlog4.svg";
-import Icon4 from "@/lib/img/DropdownIcon.svg"; // Assuming this is the icon for "Saber Mais" button
+import Icon4 from "@/lib/img/DropdownIcon.svg";
 
 const GuideIT = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-      <div className="grid grid-cols-3 gap-6">
-        <PrimulaCard
-          icon={{ src: logo1, width: 40, height: 40 }}
-          borderColor="yellow"
-          title="Websites Comerciais"
-          subtitle="& Corporativos"
-          description="Desenvolvemos websites modernos e atrativos para empresas comerciais e corporativas, proporcionando uma presença online impactante."
-        />
+    <section className="bg-gradient-to-r from-blue-500 to-blue-700 p-10">
+      <div className="max-w-5xl mx-auto text-white">
+        <h2 className="text-4xl text-primary-0 font-bold mb-8">
+          Desenvolvemos aplicativos nativos e híbridos para dispositivos Android
+          e iOS.
+        </h2>
 
-        <PrimulaCard
-          icon={{ src: logo2, width: 40, height: 40 }}
-          borderColor="green"
-          title="Aplicativos para"
-          subtitle="Celulares"
-          description="Crie experiências móveis excepcionais com nossos aplicativos personalizados, desenvolvidos para atender às suas necessidades específicas e encantar seus usuários."
-        />
-
-        <PrimulaCard
-          icon={{ src: logo3, width: 40, height: 40 }}
-          borderColor="blue"
-          title="Sistemas de Gestão para"
-          subtitle="Empresas"
-          description="Optimize a eficiência e organização de sua empresa com nossos sistemas de gestão personalizados, projetados para simplificar processos e impulsionar a produtividade."
-        />
-
-        <PrimulaCard
-          icon={{ src: logo4, width: 40, height: 40 }}
-          borderColor="purple"
-          title="Arquitetura de"
-          subtitle="Softwares"
-          description="Construímos arquiteturas de software robustas e escaláveis, adaptadas às suas necessidades, para garantir um desempenho excepcional e uma base sólida para o crescimento futuro."
-        />
+        <div className="mb-8">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=74SX19N1s6o&t=7s&pp=ygUZYXBwIGRldmVsb3BtZW50IHB1YmxpY2l0eQ%3D%3D"
+            width="100%"
+            height="400px"
+          />
+        </div>
       </div>
     </section>
   );
