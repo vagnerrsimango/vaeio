@@ -6,7 +6,9 @@ import Image from "next/image";
 import Button3 from "../Button3";
 import Icon4 from "@/lib/img/DropdownIcon.svg";
 import "animate.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaUser } from "react-icons/fa";
+import BlogCard from "./BlogCard";
+import author from "@/lib/img/miacouto.jpg";
 
 const GuideBlog = () => {
   const [currentImage, setCurrentImage] = useState(cover);
@@ -27,7 +29,6 @@ const GuideBlog = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Remove event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -47,7 +48,7 @@ const GuideBlog = () => {
           ? "#Inovação #Tecnologia #Hackathon"
           : "#Destaque #Nacional"
       );
-    }, 5000); // Change image every 5 seconds
+    }, 9000); // 9 seconds
 
     // Clear interval on unmount
     return () => clearInterval(intervalId);
@@ -70,7 +71,7 @@ const GuideBlog = () => {
 
   return (
     <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+      {/* <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
         <Button3
           type="button"
           title="Tecnologia"
@@ -95,7 +96,7 @@ const GuideBlog = () => {
           className="mb-4 mr-6"
           icon={Icon4}
         />
-      </div>
+      </div> */}
 
       <div className="relative">
         <Image
@@ -105,7 +106,7 @@ const GuideBlog = () => {
         />
         <div
           id="textContainer"
-          className="absolute text-primary-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          className="absolute text-primary-0  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
         >
           <h1 className="text-4xl font-bold mb-2 text-white">{title}</h1>
           <p className="text-sm font-light text-white">{tags}</p>
@@ -116,6 +117,43 @@ const GuideBlog = () => {
         <div className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer">
           <FaChevronRight size={30} color="white" onClick={switchImage} />
         </div>
+      </div>
+      <div className="flex flex-wrap justify-center">
+        <BlogCard
+          imageSrc={hackathon}
+          date="July 23, 2023"
+          tags="Business, Travel"
+          borderColor="purple-100"
+          title="Your most unhappy costumers are your greatest source of learning."
+          description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          authorIconSrc={author}
+          authorName="John Doe"
+          authorProfession="Software Engineer"
+        />
+
+        <BlogCard
+          imageSrc={hackathon}
+          date="July 23, 2023"
+          tags="Business, Travel"
+          borderColor="purple-100"
+          title="Your most unhappy costumers are your greatest source of learning."
+          description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          authorIconSrc={author}
+          authorName="John Doe"
+          authorProfession="Software Engineer"
+        />
+
+        <BlogCard
+          imageSrc={hackathon}
+          date="July 23, 2023"
+          tags="Business, Travel"
+          borderColor="purple-100"
+          title="Your most unhappy costumers are your greatest source of learning."
+          description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          authorIconSrc={author}
+          authorName="John Doe"
+          authorProfession="Software Engineer"
+        />
       </div>
     </section>
   );

@@ -7,24 +7,24 @@ const HeroC = () => {
     <section className="min-h-full bg-gradient-to-r from-blue-500 to-blue-700 max-container padding-container flex items-center justify-center flex-col gap-8 py-10 pb-16 md:gap-16 lg:py-20 xl:flex-row min-w-full">
       <div className="mx-auto flex-grow flex flex-col items-center justify-center text-center m-10 md:w-3/4 md:text-left md:flex-row md:items-start md:justify-between md:ml-24">
         <div className="transition-transform duration-1000 transform hover:translate-y-4 mt-16">
-          <p className="text-white text-3xl md:text-4xl lg:text-4xl font-outfit font-light mb-4">
+          <p className="text-white text-6xl md:text-6xl lg:text-6xl font-outfit font-bold mb-4">
             <span className="text-green-100 font-extralight">
               CONSULTORIA EMPRESARIAL
             </span>
           </p>
           <div className="flex flex-col items-center md:items-start">
             <p className="text-white text-3xl md:text-4xl lg:text-4xl font-medium">
-              <span className="text-primary-0 text-5xl md:text-6xl lg:text-6xl font-medium">
+              <span className="text-primary-0 text-5xl md:text-3xl lg:text-3xl font-medium">
                 Estratégias
               </span>
             </p>
             <p className="text-white text-3xl md:text-4xl lg:text-4xl font-medium">
-              <span className="text-primary-0 text-5xl md:text-6xl lg:text-6xl font-medium">
+              <span className="text-primary-0 text-5xl md:text-3xl lg:text-3xl font-medium">
                 Personalizadas
               </span>
             </p>
             <p className="text-white text-3xl md:text-4xl lg:text-4xl mb-4 font-medium">
-              <span className="text-primary-0 text-5xl md:text-6xl lg:text-6xl font-medium">
+              <span className="text-primary-0 text-5xl md:text-3xl lg:text-3xl font-medium">
                 para Empresas
               </span>
             </p>

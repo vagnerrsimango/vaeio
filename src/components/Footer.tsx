@@ -7,13 +7,11 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-blue-800 max-w-[1280px] text-primary-0 text-center">
       <div className="container flex items-center justify-between">
-        {/* Logo with spacing */}
         <div className="flex items-center space-x-4 ml-8">
           <Image src={LogoWhiteText} alt="Icon 1" width={100} height={32} />
         </div>
 
-        {/* Navigation Links with adjusted spacing for centralization */}
-        <div className="flex items-center space-x-4 ml-16">
+        {/* <div className="flex items-center space-x-4 ml-16">
           <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
             Prímula
           </p>
@@ -26,17 +24,15 @@ const Footer = () => {
           <p className="text-sm text-primary-0 hover:font-bold cursor-pointer transition-all">
             Blog
           </p>
-        </div>
+        </div> */}
 
-        {/* Social Icons */}
-        <div className="flex items-center space-x-4 ml-auto">
+        {/* <div className="flex items-center space-x-4 ml-auto">
           <FaTwitter className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
           <FaFacebook className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
           <FaInstagram className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
           <FaLinkedin className="text-2xl text-primary-0 cursor-pointer hover:scale-125" />
-        </div>
+        </div> */}
 
-        {/* Copyright, Terms and Conditions, Cookies on the right */}
         <div className="flex items-center space-x-4 ml-auto mr-8">
           <p className="text-sm text-primary-0 hover:font-bold cursor-pointer ">
             <a href="/terms">Termos e Condições | Cookies</a>

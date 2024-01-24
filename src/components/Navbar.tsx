@@ -1,27 +1,29 @@
 "use client";
 import { useState } from "react";
-import { NAV_LINKS } from "@/constants";
-import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import LogoWhite from "@/lib/img/logo-white.svg";
+import Image from "next/image";
+import { FaWhatsapp } from "react-icons/fa";
 import { Menu } from "@headlessui/react";
+import { NAV_LINKS } from "@/constants";
+import LogoWhite from "@/lib/img/logo-white.svg";
 import MenuIcon from "@/lib/img/menu.svg";
 import useNavScroll from "@/hooks/useNavScroll";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
   const { scroll } = useNavScroll();
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  console.log(scroll);
   return (
     <nav
       className={`fixed shadow-sm ${
-        scroll > 0 ? "bg-black-500  transition-colors shadow-black-400" : ""
-      }  top-0 left-0 right-0 w-full z-30`}
+        scroll > 0 ? "bg-black-500 transition-colors shadow-black-400" : ""
+      } top-0 left-0 right-0 w-full z-30`}
     >
       <div className="max-container padding-container mt-4">
         <div className="flex items-center justify-between">
@@ -31,7 +33,7 @@ const Navbar = () => {
               alt="logo"
               width={74}
               height={29}
-              className="ml-16 mb-2 hover:scale-110  "
+              className="ml-16 mb-2 hover:scale-110"
             />
           </Link>
 
@@ -45,7 +47,9 @@ const Navbar = () => {
                 {link.key === "primula" ? (
                   <Link
                     href="/primula"
-                    className="regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                    className={`regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all ${
+                      pathname === "/primula" ? "font-bold" : ""
+                    }`}
                   >
                     {link.label}
                   </Link>
@@ -53,7 +57,9 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.key}
-                    className="regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                    className={`regular-16 text-primary-0 flexCenter cursor-pointer pb-1.5 transition-all ${
+                      pathname === link.href ? "font-bold" : ""
+                    }`}
                   >
                     {link.label}
                   </Link>
@@ -66,9 +72,9 @@ const Navbar = () => {
             href="https://api.whatsapp.com/send?phone=+258846805329"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-0  hover:text-green-600 flex items-center"
+            className="text-primary-0 hover:text-green-600 flex items-center"
           >
-            <FaWhatsapp className="text-2xl " />
+            <FaWhatsapp className="text-2xl" />
             <span className="text-sm ml-2">Contacte-nos!</span>
           </a>
           <Menu>
