@@ -26,6 +26,7 @@ import {
   FaCogs,
   FaDatabase,
   FaMagic,
+  FaTv,
 } from "react-icons/fa";
 
 const Guide = () => {
@@ -58,7 +59,7 @@ const Guide = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
+    <section className=" bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
       <p className="text-primary-0 text-3xl font-bold animate__animated animate__fadeIn">
         CONHEÇA AS NOSSAS SOLUÇÕES PARA A SUA EMPRESA
       </p>
@@ -120,13 +121,13 @@ const Guide = () => {
                 <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
                   <FaStore size={24} className="mr-2 text-green-900" />
                   <div>
-                    <p className="text-sm font-bold mb-1">POS</p>
+                    <p className="text-sm font-bold mb-1">Comercial</p>
                   </div>
                 </div>
                 <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
                   <FaCreditCard size={24} className="mr-2 text-blue-900" />
                   <div>
-                    <p className="text-sm font-bold mb-1">Comercial</p>
+                    <p className="text-sm font-bold mb-1">Contabilidade</p>
                   </div>
                 </div>
               </div>
@@ -139,9 +140,9 @@ const Guide = () => {
                   </div>
                 </div>
                 <div className="flex items-center mb-4 mr-6 p-3 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaBook size={24} className="mr-2 text-indigo-900" />
+                  <FaTv size={24} className="mr-2 text-indigo-900" />
                   <div>
-                    <p className="text-sm font-bold mb-1">Contabilidade</p>
+                    <p className="text-sm font-bold mb-1">BrandSync</p>
                   </div>
                 </div>
                 <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-pink-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">

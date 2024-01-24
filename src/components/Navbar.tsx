@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { Menu } from "@headlessui/react";
 import { NAV_LINKS } from "@/constants";
 import LogoWhite from "@/lib/img/logo-white.svg";
@@ -72,10 +72,10 @@ const Navbar = () => {
             href="https://api.whatsapp.com/send?phone=+258846805329"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-0 hover:text-green-600 flex items-center"
+            className="text-primary-0 flex items-center"
           >
-            <FaWhatsapp className="text-2xl" />
-            <span className="text-sm ml-2">Contacte-nos!</span>
+            <span className="text-sm ml-2">Contacte-nos! </span> <br />
+            <FaPhone className="text-sm ml-4" />
           </a>
           <Menu>
             {isMenuOpen && (
