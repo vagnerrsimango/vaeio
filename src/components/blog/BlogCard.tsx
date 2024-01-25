@@ -35,7 +35,13 @@ const BlogCard: React.FC<PrimulaCardProps> = ({
 
   return (
     <div className="flex flex-col items-center h-30 w-60 m-10 p-4 bg-gradient-radial">
-      <Image src={imageSrc} alt="logo" className="mb-2" />{" "}
+      <Image
+        src={imageSrc}
+        alt="logo"
+        width={300}
+        height={300}
+        className="mb-2"
+      />{" "}
       <div className="text-center">
         <p className="text-primary-0 mt-2 text-sm">
           {tags} - {date}

@@ -2,9 +2,10 @@
 import React, { useState, useEffect } from "react";
 import cover from "@/lib/img/impdigital.jpg";
 import hackathon from "@/lib/img/hackathon.jpg";
+import ent1 from "@/lib/img/ent1.jpg";
+import ent2 from "@/lib/img/ent2.jpg";
+import ent3 from "@/lib/img/ent3.jpeg";
 import Image from "next/image";
-import Button3 from "../Button3";
-import Icon4 from "@/lib/img/DropdownIcon.svg";
 import "animate.css";
 import { FaChevronLeft, FaChevronRight, FaUser } from "react-icons/fa";
 import BlogCard from "./BlogCard";
@@ -120,11 +121,23 @@ const GuideBlog = () => {
       </div>
       <div className="flex flex-wrap justify-center">
         <BlogCard
-          imageSrc={hackathon}
+          imageSrc={ent1}
           date="July 23, 2023"
           tags="Business, Travel"
           borderColor="purple-100"
-          title="Your most unhappy costumers are your greatest source of learning."
+          title="Os clientes mais insatisfeitos são a sua maior fonte de aprendizado."
+          description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          authorIconSrc={author}
+          authorName="Mia Couto"
+          authorProfession="Escritor"
+        />
+
+        <BlogCard
+          imageSrc={ent1}
+          date="July 23, 2023"
+          tags="Business, Travel"
+          borderColor="purple-100"
+          title="Samsung espera que a Apple lance dobráveis em 2024, e não será um iPhone"
           description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
           authorIconSrc={author}
           authorName="John Doe"
@@ -132,23 +145,11 @@ const GuideBlog = () => {
         />
 
         <BlogCard
-          imageSrc={hackathon}
+          imageSrc={ent1}
           date="July 23, 2023"
           tags="Business, Travel"
           borderColor="purple-100"
-          title="Your most unhappy costumers are your greatest source of learning."
-          description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-          authorIconSrc={author}
-          authorName="John Doe"
-          authorProfession="Software Engineer"
-        />
-
-        <BlogCard
-          imageSrc={hackathon}
-          date="July 23, 2023"
-          tags="Business, Travel"
-          borderColor="purple-100"
-          title="Your most unhappy costumers are your greatest source of learning."
+          title="Jovens africanos: líderes “devem fazer mais” para acabar com conflitos"
           description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
           authorIconSrc={author}
           authorName="John Doe"
