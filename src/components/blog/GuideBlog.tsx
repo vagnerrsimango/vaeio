@@ -10,6 +10,7 @@ import "animate.css";
 import { FaChevronLeft, FaChevronRight, FaUser } from "react-icons/fa";
 import BlogCard from "./BlogCard";
 import author from "@/lib/img/miacouto.jpg";
+import BlogItem from "./blogItem";
 
 const GuideBlog = () => {
   const [currentImage, setCurrentImage] = useState(cover);
@@ -120,7 +121,7 @@ const GuideBlog = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center">
-        <BlogCard
+        {/* <BlogCard
           imageSrc={ent1}
           date="July 23, 2023"
           tags="Business, Travel"
@@ -154,7 +155,9 @@ const GuideBlog = () => {
           authorIconSrc={author}
           authorName="John Doe"
           authorProfession="Software Engineer"
-        />
+        /> */}
+
+        <BlogItem />
       </div>
     </section>
   );

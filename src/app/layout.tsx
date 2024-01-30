@@ -3,7 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Outfit } from "next/font/google";
+
 import Footer from "@/components/Footer";
+import NextUiProviderComponent from "@/components/NextUiProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({
@@ -26,9 +28,11 @@ export default function RootLayout({
       <body>
         <div className={outfit.className}>
           <div className="container">
-            <Navbar />
-            {children}
-            <Footer />
+            <NextUiProviderComponent>
+              {/* <Navbar /> */}
+              {children}
+              {/* <Footer /> */}
+            </NextUiProviderComponent>
           </div>
         </div>
       </body>
