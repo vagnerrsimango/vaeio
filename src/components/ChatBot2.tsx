@@ -14,7 +14,7 @@ const Chatbot = () => {
     };
   }, []);
 
-  return <div></div>;
+  return <div className=""></div>;
 };
 
 export default Chatbot;

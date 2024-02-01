@@ -26,12 +26,14 @@ export default function ScrollTop() {
   }, []);
 
   return (
-    <div className={`fixed bottom-4 right-4 ${isVisible ? "block" : "hidden"}`}>
+    <div
+      className={`fixed  bottom-16 right-0 ${isVisible ? "block" : "hidden"}`}
+    >
       <button
-        className="bg-blue-400 text-white px-4 py-2 rounded-full focus:outline-none mr-8 mb-8 bg-opacity-75"
+        className="bg-green-400 text-white px-4 py-2 rounded-full focus:outline-none mr-8 mb-16"
         onClick={scrollToTop}
       >
-        <FontAwesomeIcon color="white" icon={faArrowUp} />
+        <FontAwesomeIcon color="white" icon={faArrowUp} height={80} />
       </button>
     </div>
   );

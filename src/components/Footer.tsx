@@ -11,11 +11,14 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center space-x-4 ml-auto mr-8">
-          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer ">
+          <p className="text-sm text-primary-0 hover:font-bold cursor-pointer hidden sm:block ">
             <a href="/terms">Termos e Condições | Cookies</a>
           </p>
-          <p className="text-sm hover:font-bold text-primary-0">
-            &copy; 2023 VAE.IO. Todos os direitos reservados.
+          <p className="text-sm hover:font-bold text-primary-0 ">
+            &copy; 2023 VAE.IO
+          </p>
+          <p className="text-sm hover:font-bold text-primary-0 hidden sm:block ">
+            Todos os direitos reservados.
           </p>
         </div>
       </div>

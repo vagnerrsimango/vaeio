@@ -86,13 +86,13 @@ export default function Header() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className={
-                isPageActive(`/${item.toLowerCase()}`)
-                  ? "font-bold"
-                  : "font-normal"
+              color="secondary"
+              href={
+                item === "Soluções TI"
+                  ? "/itsolutions"
+                  : `/${item.toLowerCase()}`
               }
-              href={`/${item.toLowerCase()}`}
-              size="lg"
+              aria-current="page"
             >
               {item}
             </Link>

@@ -15,7 +15,7 @@ export default function Home() {
       <Guide />
       <Portfolio />
       <ScrollTop />
-      {/* <Chatbot /> */}
+      <Chatbot />
       <Clients />
       <Contacts />
     </div>
