@@ -3,17 +3,10 @@ import React from "react";
 import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import {
-  FaPhone,
-  FaPhoneAlt,
-  FaPhoneSlash,
-  FaPhoneSquare,
-  FaPhoneSquareAlt,
-} from "react-icons/fa";
-import { Menu } from "@headlessui/react";
-import { NAV_LINKS } from "@/constants";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+
 import LogoWhite from "@/lib/img/logo-white.svg";
-import MenuIcon from "@/lib/img/menu.svg";
+
 import {
   Navbar,
   NavbarBrand,
@@ -33,6 +26,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { scroll } = useNavScroll();
   const pathname = usePathname();
+
+  const isPageActive = (path) => {
+    return pathname === path;
+  };
+
   return (
     <Navbar
       className={`fixed shadow-sm ${
@@ -55,26 +53,26 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="secondary" href="/primula">
-            Primula
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link color="secondary" href="/itsolutions" aria-current="page">
-            Soluções TI
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="secondary" href="/consultoria" aria-current="page">
-            Consultoria
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="secondary" href="/blog">
-            Blog
-          </Link>
-        </NavbarItem>
+        {menuItems.map((item, index) => (
+          <NavbarItem
+            key={`${item}-${index}`}
+            isActive={isPageActive(
+              item === "Soluções TI" ? "/itsolutions" : `/${item.toLowerCase()}`
+            )}
+          >
+            <Link
+              color="secondary"
+              href={
+                item === "Soluções TI"
+                  ? "/itsolutions"
+                  : `/${item.toLowerCase()}`
+              }
+              aria-current="page"
+            >
+              {item}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
@@ -87,7 +85,15 @@ export default function Header() {
       <NavbarMenu className="bg-blue-500">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full text-primary-0" href="#" size="lg">
+            <Link
+              className={
+                isPageActive(`/${item.toLowerCase()}`)
+                  ? "font-bold"
+                  : "font-normal"
+              }
+              href={`/${item.toLowerCase()}`}
+              size="lg"
+            >
               {item}
             </Link>
           </NavbarMenuItem>
