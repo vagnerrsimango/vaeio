@@ -20,9 +20,9 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flexCenter gap-4 m-8 h-12 ${bg} ${
+      className={`flexCenter overflow-x-hidden gap-4 m-8 h-12 ${bg} ${
         full && "w-full"
-      } sm:mr-0 sm:mb-2 sm:h-auto`}
+      } `}
       type={type}
       onClick={onClick}
       style={{ padding: "8px 16px" }}

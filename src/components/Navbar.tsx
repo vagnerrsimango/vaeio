@@ -33,7 +33,7 @@ const Navbar = () => {
               alt="logo"
               width={74}
               height={29}
-              className="ml-16 mb-2 hover:scale-110"
+              className="ml-16 mb-2 mr-10 hover:scale-110"
             />
           </Link>
 
