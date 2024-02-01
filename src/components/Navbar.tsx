@@ -45,7 +45,7 @@ export default function Header() {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden text-primary-300"
         />
         <NavbarBrand>
           <Link href="/">
@@ -84,21 +84,10 @@ export default function Header() {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className="bg-blue-500">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
+            <Link className="w-full text-primary-0" href="#" size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
