@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import trackPNG from "@/lib/img/trackingfake.png";
-import Showcase1 from "@/lib/img/showcase.svg";
-import Showcase2 from "@/lib/img/showcase2.svg";
-import Showcase3 from "@/lib/img/showcase3.svg";
 import Icon4 from "@/lib/img/DropdownIcon.svg";
 import Button2 from "./Button2";
 
@@ -25,7 +22,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2 bg-white p-8 mt-4 sm:mt-0">
+        <div className="w-full sm:w-1/2 p-8 mt-4 sm:mt-0">
           <div className="flex flex-col items-start">
             <p className="text-primary-0 text-3xl mb-4">GEOME</p>
             <p className="text-primary-0 mb-4 text-left">
