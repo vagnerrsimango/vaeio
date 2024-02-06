@@ -14,7 +14,6 @@ export default function Home() {
       <Hero />
       <Guide />
       <Portfolio />
-
       <Clients />
       <Contacts />
       <ScrollTop />

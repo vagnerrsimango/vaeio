@@ -10,7 +10,7 @@ import Icon4 from "@/lib/img/DropdownIcon.svg";
 
 const Contacts = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-8">
+    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-8 overflow-hidden">
       <p className="text-primary-0 text-3xl font-bold mb-4">Entre em Contato</p>
       <div className="md:flex md:flex-row md:items-start md:justify-center w-full">
         <div className="md:w-1/2 text-primary-0 p-4">
