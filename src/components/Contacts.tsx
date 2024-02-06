@@ -10,16 +10,16 @@ import Icon4 from "@/lib/img/DropdownIcon.svg";
 
 const Contacts = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
-      <p className="text-primary-0 text-4xl font-bold mb-8">Contatos</p>
-      <div className="md:flex md:flex-row md:items-start md:justify-center">
+    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-8">
+      <p className="text-primary-0 text-3xl font-bold mb-4">Entre em Contato</p>
+      <div className="md:flex md:flex-row md:items-start md:justify-center w-full">
         <div className="md:w-1/2 text-primary-0 p-4">
           <div className="mb-4">
             <p className="text-lg text-black mb-2">
-              Precisa de assistência? Entre em contato conosco!
+              Precisa de assistência? Estamos aqui para ajudar!
             </p>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="fullname"
               type="text"
               placeholder="Nome Completo"
@@ -33,19 +33,19 @@ const Contacts = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 p-4 md:ml-auto">
           <form className="max-w-md w-full mx-auto">
             <div className="mb-4">
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
-                placeholder="Email"
+                placeholder="Seu Email"
               />
             </div>
             <div className="mb-4">
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="subject"
                 type="text"
                 placeholder="Assunto"
@@ -53,14 +53,14 @@ const Contacts = () => {
             </div>
             <div className="mb-6">
               <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
-                placeholder="Sua Mensagem"
+                placeholder="Como podemos ajudar você?"
                 rows="4"
               ></textarea>
             </div>
-            <div className="flex items-center justify-center">
-              <Button2 type="button" title="Enviar" icon={Icon4} />
+            <div className="flex justify-end">
+              <Button2 type="button" title="Enviar Mensagem" icon={Icon4} />
             </div>
           </form>
         </div>

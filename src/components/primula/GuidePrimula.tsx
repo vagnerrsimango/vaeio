@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import logo1 from "@/lib/img/modlog1.svg";
 import logo2 from "@/lib/img/modlog2.svg";
@@ -9,8 +8,8 @@ import "animate.css";
 
 const GuidePrimula = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
-      <p className="text-green-300 mt-8 text-3xl font-bold mb-4">
+    <section className=" bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
+      <p className="text-primary-0 text-3xl font-bold mt-20 animate__animated animate__fadeIn">
         MÓDULOS DO PRIMULA
       </p>
       <p className="text-primary-0">
@@ -18,7 +17,7 @@ const GuidePrimula = () => {
         indispensáveis para a sua empresa
       </p>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <PrimulaCard
           icon={logo1}
           borderColor="primary-white-0"

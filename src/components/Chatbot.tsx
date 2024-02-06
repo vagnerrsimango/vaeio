@@ -1,42 +1,20 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect } from "react";
 
-export default function Chatbot() {
-  const [isVisible, setIsVisible] = useState(false);
+const Chatbot = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://embed.tawk.to/65b8a73c0ff6374032c650a3/1hlckqhj0";
+    script.charset = "UTF-8";
+    script.setAttribute("crossorigin", "*");
+    document.body.appendChild(script);
 
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible);
-  };
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
-  return (
-    <div className="fixed bottom-16 right-4">
-      <button
-        className="text-white px-4 py-2 rounded-full focus:outline-none mr-8 mb-16 bg-opacity-75 relative"
-        onClick={toggleVisibility}
-      >
-        <FontAwesomeIcon
-          className={`absolute top-1/2 left-30 transform -translate-x-1/2 -translate-y-1/2 ${
-            isVisible ? "hidden" : "block"
-          }`}
-          color="white"
-          icon={faComment}
-        />
-        <div
-          className={`bg-white p-4 mt-10 rounded-lg shadow-md ${
-            isVisible ? "block" : "hidden"
-          }`}
-        >
-          {isVisible && (
-            <iframe
-              title="Chatbot"
-              src="https://www.chatbase.co/chatbot-iframe/r1NdtnlcJAch2M7R5kE6S"
-              width="300"
-              height="400"
-            ></iframe>
-          )}
-        </div>
-      </button>
-    </div>
-  );
-}
+  return <div className=""></div>;
+};
+
+export default Chatbot;
