@@ -76,10 +76,12 @@ export default function Header() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat">
-            Contacte-nos!
-            <FaPhoneSquareAlt className="text-xl" />
-          </Button>
+          <Link href="#contacts">
+            <Button as={Link} color="secondary" href="#" variant="flat">
+              Contacte-nos!
+              <FaPhoneSquareAlt className="text-xl" />
+            </Button>
+          </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="bg-blue-500">

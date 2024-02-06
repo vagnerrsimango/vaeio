@@ -10,7 +10,10 @@ import Icon4 from "@/lib/img/DropdownIcon.svg";
 
 const Contacts = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-8 overflow-hidden">
+    <section
+      id="contact"
+      className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-8 overflow-hidden"
+    >
       <p className="text-primary-0 text-3xl font-bold mb-4">Entre em Contato</p>
       <div className="md:flex md:flex-row md:items-start md:justify-center w-full">
         <div className="md:w-1/2 text-primary-0 p-4">
@@ -19,7 +22,7 @@ const Contacts = () => {
               Precisa de assistência? Estamos aqui para ajudar!
             </p>
             <input
-              className="shadow appearance-none border rounded w-96 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="fullname"
               type="text"
               placeholder="Nome Completo"
