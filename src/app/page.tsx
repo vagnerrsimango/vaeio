@@ -6,7 +6,7 @@ import Guide from "@/components/Guide";
 import Portfolio from "@/components/Portfolio";
 import Clients from "@/components/Clients";
 import ScrollTop from "@/components/ScrollToTop";
-import Chatbot from "@/components/ChatBot";
+import ChatBot from "@/components/ChatBot";
 import Contacts from "@/components/Contacts";
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Clients />
       <Contacts />
       <ScrollTop />
-      <Chatbot />
+      <ChatBot />
     </div>
   );
 }
