@@ -16,7 +16,7 @@ const Clients = () => {
       <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center ">
         {allLogos.map((logo, index) => (
           <div key={index} className="flex items-center mt-48 justify-center">
-            <Image src={logo} className="m-2 opacity-100 w-32 h-32" />
+            <Image src={logo} alt="img" className="m-2 opacity-100 w-32 h-32" />
           </div>
         ))}
       </div>

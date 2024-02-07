@@ -59,7 +59,6 @@ const Contacts = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 placeholder="Como podemos ajudar você?"
-                rows="4"
               ></textarea>
             </div>
             <div className="flex justify-end">

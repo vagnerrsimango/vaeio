@@ -27,7 +27,7 @@ export default function Header() {
   const { scroll } = useNavScroll();
   const pathname = usePathname();
 
-  const isPageActive = (path) => {
+  const isPageActive = (path: string) => {
     return pathname === path;
   };
 
