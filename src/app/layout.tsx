@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Outfit } from "next/font/google";
 import Footer from "@/components/Footer";
+import Navb from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body>
         <div className={outfit.className}>
           <div className="container">
-            <Navbar />
+            <Navb />
             {children}
             <Footer />
           </div>

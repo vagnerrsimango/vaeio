@@ -20,21 +20,14 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flexCenter gap-4 m-8 h-12 ${bg} ${
-        full && "w-full"
-      } sm:mr-0 sm:mb-2 sm:h-auto`}
+      className={`flex  items-center overflow-x-hidden justify-center gap-2 px-4 h-10 ${
+        full ? "w-full" : "inline-flex"
+      } ${bg} rounded-md`}
       type={type}
       onClick={onClick}
-      style={{ padding: "8px 16px" }}
     >
-      {icon && (
-        <div className="flex items-center justify-center">
-          <Image src={icon} alt={title} width={40} height={40} />
-          <label className="bold-16 p-1 text-primary-0 whitespace-nowrap cursor-pointer">
-            {title}
-          </label>
-        </div>
-      )}
+      {icon && <Image src={icon} alt={title} width={24} height={24} />}
+      <span className="text-white">{title}</span>
     </button>
   );
 };

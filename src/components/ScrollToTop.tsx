@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function ScrollTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,7 +7,7 @@ export default function ScrollTop() {
   const handleScroll = () => {
     const scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop;
-    setIsVisible(scrollTop > 300); // Adjust the scroll threshold as needed
+    setIsVisible(scrollTop > 300);
   };
 
   const scrollToTop = () => {
@@ -26,12 +25,14 @@ export default function ScrollTop() {
   }, []);
 
   return (
-    <div className={`fixed bottom-4 right-4 ${isVisible ? "block" : "hidden"}`}>
+    <div
+      className={`fixed  bottom-16 right-0 ${isVisible ? "block" : "hidden"}`}
+    >
       <button
-        className="bg-blue-400 text-white px-4 py-2 rounded-full focus:outline-none mr-8 mb-8 bg-opacity-75"
+        className="bg-green-400 text-white px-4 py-2 rounded-full focus:outline-none mr-8 mb-16"
         onClick={scrollToTop}
       >
-        <FontAwesomeIcon color="white" icon={faArrowUp} />
+        <FaArrowUp color="white" height={160} />
       </button>
     </div>
   );
