@@ -27,7 +27,7 @@ const HeroPrimula = () => {
               Empresas
             </p>
           </div>
-          <p className="text-green-100 text-center md:text-left text-xs md:text-base max-w-md md:max-w-none">
+          <p className="text-green-100 text-center md:text-left text-lg md:text-base max-w-md md:max-w-none">
             O Prímula é uma plataforma de gestão de negócios desenvolvida para
             pequenas e médias empresas.
           </p>

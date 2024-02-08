@@ -8,8 +8,8 @@ import "animate.css";
 
 const GuidePrimula = () => {
   return (
-    <section className=" bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
-      <p className="text-primary-0 text-3xl font-bold mt-20 animate__animated animate__fadeIn">
+    <section className="p-4 bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
+      <p className="text-primary-0 mb-12 text-3xl font-bold mt-20 animate__animated animate__fadeIn">
         MÓDULOS DO PRIMULA
       </p>
       <p className="text-primary-0">
