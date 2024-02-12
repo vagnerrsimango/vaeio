@@ -43,7 +43,7 @@ export default function Header() {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-primary-300"
+          className="sm:hidden text-primary-300 "
         />
         <NavbarBrand>
           <Link href="/">

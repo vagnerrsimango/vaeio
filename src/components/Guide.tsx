@@ -28,6 +28,7 @@ import {
   FaMagic,
   FaTv,
 } from "react-icons/fa";
+import ModuleButton from "./ModuleButton";
 
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
@@ -61,7 +62,7 @@ const Guide = () => {
   return (
     <section className=" bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
       <p className="text-primary-0 text-3xl font-bold mt-20 animate__animated animate__fadeIn">
-        CONHEÇA AS NOSSAS SOLUÇÕES PARA A SUA EMPRESAAAAA
+        CONHEÇA AS NOSSAS SOLUÇÕES PARA A SUA EMPRESA
       </p>
 
       <div className="flex flex-col lg:flex-row w-full mt-8 p-8">
@@ -115,85 +116,79 @@ const Guide = () => {
               <p className="text-2xl font-bold mb-6">Principais Módulos</p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaShoppingCart
-                    size={24}
-                    className="mr-2 text-yellow-900 w-6 h-6"
-                  />
-                  <div>
-                    <p className="text-sm font-bold mb-1">Compras</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaStore size={24} className="mr-2 text-green-900 w-6 h-6" />
-                  <div>
-                    <p className="text-sm font-bold mb-1">Comercial</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaCreditCard
-                    size={24}
-                    className="mr-2 text-blue-900 w-6 h-6"
-                  />
-                  <div>
-                    <p className="text-sm font-bold mb-1 truncate">
-                      Contabilidade
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaUsers size={24} className="mr-2 text-purple-900 w-6 h-6" />
-                  <div>
-                    <p className="text-sm font-bold mb-1">Recursos Humanos</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaTv size={24} className="mr-2 text-indigo-900 w-6 h-6" />
-                  <div>
-                    <p className="text-sm font-bold mb-1">BrandSync</p>
-                  </div>
-                </div>
-                <div className="flex items-center mb-4 p-3 bg-gradient-to-r from-pink-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                  <FaMoneyBill
-                    size={24}
-                    className="mr-2 text-pink-900 w-6 h-6"
-                  />
-                  <div>
-                    <p className="text-sm font-bold mb-1">Finanças</p>
-                  </div>
-                </div>
+                <ModuleButton
+                  icon={FaShoppingCart}
+                  colorFrom="yellow"
+                  colorTo="red"
+                  text="Compras"
+                />
+                <ModuleButton
+                  icon={FaStore}
+                  colorFrom="green"
+                  colorTo="blue"
+                  text="Comercial"
+                />
+                <ModuleButton
+                  icon={FaCreditCard}
+                  colorFrom="blue"
+                  colorTo="indigo"
+                  text="Contabilidade"
+                />
+                <ModuleButton
+                  icon={FaUsers}
+                  colorFrom="purple"
+                  colorTo="pink"
+                  text="Recursos Humanos"
+                />
+                <ModuleButton
+                  icon={FaTv}
+                  colorFrom="indigo"
+                  colorTo="blue"
+                  text="BrandSync"
+                />
+                <ModuleButton
+                  icon={FaMoneyBill}
+                  colorFrom="pink"
+                  colorTo="red"
+                  text="Finanças"
+                />
               </div>
             </div>
           ) : tab === "solutionti" ? (
             <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-yellow-400 to-red-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                <FaGlobe size={40} className="mr-4 text-yellow-900" />
-                <div>
-                  <p className="text-xl font-bold mb-1">Websites Comerciais</p>
-                  <p className="text-sm">& Corporativos</p>
+              <div className="flex flex-wrap justify-start items-center">
+                <ModuleButton
+                  icon={FaGlobe}
+                  colorFrom="yellow"
+                  colorTo="red"
+                  text="Websites Comerciais & Corporativos"
+                />
+                <div className="ml-4">
+                  <ModuleButton
+                    icon={FaMobileAlt}
+                    colorFrom="green"
+                    colorTo="blue"
+                    text="Aplicativos para Celulares"
+                  />
                 </div>
               </div>
-              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                <FaMobileAlt size={40} className="mr-4 text-green-900" />
-                <div>
-                  <p className="text-xl font-bold mb-1">
-                    Aplicativos para Celulares
-                  </p>
+
+              <div className="flex flex-wrap justify-end items-center">
+                <div className="mr-4">
+                  <ModuleButton
+                    icon={FaDesktop}
+                    colorFrom="indigo"
+                    colorTo="blue"
+                    text="Sistemas de Gestão para Empresas"
+                  />
                 </div>
-              </div>
-              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                <FaDesktop size={40} className="mr-4 text-blue-900" />
-                <div>
-                  <p className="text-xl font-bold mb-1">Sistemas de Gestão</p>
-                  <p className="text-sm">para Empresas</p>
-                </div>
-              </div>
-              <div className="flex items-center mb-4 mr-6 p-4 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
-                <FaCogs size={40} className="mr-4 text-purple-900" />
-                <div>
-                  <p className="text-xl font-bold mb-1">
-                    Arquitetura de Softwares
-                  </p>
+                <div className="lg:m-0 mr-4">
+                  <ModuleButton
+                    icon={FaCogs}
+                    colorFrom="purple"
+                    colorTo="pink"
+                    text="Arquitetura de Softwares"
+                  />
                 </div>
               </div>
             </div>
