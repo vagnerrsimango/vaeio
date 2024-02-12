@@ -10,7 +10,7 @@ type ButtonProps = {
 const Button3 = ({ type, title, icon, full }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center gap-4 mr-6 h-10 bg-blue-400 bg-opacity-10  ${
+      className={`flex items-center rounded-lg gap-4 mr-6 h-10 bg-blue-400 bg-opacity-10  ${
         full && "w-full"
       }`}
       type={type}

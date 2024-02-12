@@ -30,13 +30,13 @@ const PrimulaCard: React.FC<PrimulaCardProps> = ({
     <div
       className={`border-${borderColor}-50 border rounded-lg m-6 p-4 primula-card animate__animated animate__fadeInDown`}
     >
-      <div className="flex flex-col items-start mb-2 md:flex-row md:items-center">
-        <Image {...icon} alt="logo" className="md:mr-2 mb-2 md:mb-0" />
-        <div className="text-left">
-          <p className="text-primary-0 mt-2 text-xs md:mt-0 md:text-sm">
+      <div className="flex items-start">
+        <Image {...icon} alt="logo" className="mr-2 md:mr-4" />
+        <div className="flex flex-col">
+          <p className="text-primary-0 mt-2 mb-1 font-bold text-xs md:mt-0 md:mb-0 md:text-sm">
             {title}
           </p>
-          <p className="text-primary-0 font-bold text-sm">{subtitle}</p>
+          <p className="text-primary-0 text-sm">{subtitle}</p>
         </div>
       </div>
 

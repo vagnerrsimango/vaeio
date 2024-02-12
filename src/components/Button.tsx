@@ -20,7 +20,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flex  items-center overflow-x-hidden justify-center gap-2 px-4 h-10 ${
+      className={`flex rounded-lg items-center overflow-x-hidden justify-center gap-2 px-4 h-10 ${
         full ? "w-full" : "inline-flex"
       } ${bg} rounded-md`}
       type={type}
