@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Outfit } from "next/font/google";
 import Footer from "@/components/Footer";
 import Navb from "@/components/Navbar";
+import PrimulaModal from "@/components/PrimulaModal";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({

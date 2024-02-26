@@ -4,10 +4,11 @@ type ButtonProps = {
   type: "button" | "submit";
   title: string;
   icon?: string;
+  onClick?: () => void;
   full?: boolean;
 };
 
-const Button3 = ({ type, title, icon, full }: ButtonProps) => {
+const Button3 = ({ type, title, icon, onClick, full }: ButtonProps) => {
   return (
     <button
       className={`flex items-center rounded-lg gap-4 mr-6 h-10 bg-blue-400 bg-opacity-10  ${
