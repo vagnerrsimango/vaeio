@@ -90,6 +90,9 @@ module.exports = {
         yellow: {
           50: "#FEC601",
         },
+        primula: {
+          100: "#1E999F",
+        },
         secondary: {
           DEFAULT: "#FFFFFF",
         },

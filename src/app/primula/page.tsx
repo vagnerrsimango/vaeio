@@ -3,15 +3,23 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroPrimula from "@/components/primula/HeroPrimula";
 import GuidePrimula from "@/components/primula/GuidePrimula";
-import FooterPrimula from "@/components/primula/FooterPrimula";
 import ScrollTop from "@/components/ScrollToTop";
+import bgImage from "@/lib/img/stockchart.svg";
 
 export default function Home() {
   return (
     <>
-      <HeroPrimula />
-      <GuidePrimula />
-      <ScrollTop />
+      <div
+        style={{
+          backgroundColor: "#0B0F60",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <HeroPrimula />
+        <GuidePrimula />
+        <ScrollTop />
+      </div>
     </>
   );
 }

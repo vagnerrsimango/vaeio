@@ -1,9 +1,18 @@
 import Image from "next/image";
 import Logos from "@/lib/img/logos.svg";
+import bgImage from "@/lib/img/stockchart.svg";
 
 const HeroPrimula = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-r from-blue-500 to-blue-700 flex flex-col items-center justify-center py-10 px-4 md:py-20 md:px-0">
+    <section
+      style={{
+        backgroundImage: `url(${bgImage.src})`,
+        // backgroundColor: "#0B0F60",
+        // width: "100%",
+        // height: "100%",
+      }}
+      className="min-h-screen mb-10 flex flex-col items-center justify-center py-10 px-4 md:py-20 md:px-0"
+    >
       <div className="text-center md:text-left md:flex md:items-center">
         <div className="md:w-1/2 md:order-2 mb-8 md:mb-0 md:ml-16 md:mr-8">
           <div className="inline-block">

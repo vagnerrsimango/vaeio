@@ -8,7 +8,7 @@ import "animate.css";
 
 const GuidePrimula = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 text-center">
+    <section className="text-center">
       <p className="text-primary-0 text-3xl font-bold mb-8 md:mb-16">
         MÓDULOS DO PRIMULA
       </p>
@@ -20,7 +20,7 @@ const GuidePrimula = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <PrimulaCard
           icon={logo1}
-          borderColor="primary-white-0"
+          color="purple-300"
           title="PRÍMULA"
           subtitle="MÓDULO FINANÇAS"
           description="Fornece às empresas as ferramentas necessárias para gerir eficazmente as suas operações financeiras, monitorizar os fluxos de tesouraria e tomar decisões informadas com base em dados financeiros precisos."
@@ -30,7 +30,7 @@ const GuidePrimula = () => {
 
         <PrimulaCard
           icon={logo2}
-          borderColor="purple-100"
+          color="purple-300"
           title="PRÍMULA"
           subtitle="MÓDULO RECURSOS HUMANOS"
           description="Além de gestão de Recursos Humanos eficaz, permite a gestão de informações dos colaboradores, o processamento de salários e a optimização de processos de recrutamento e seleção."
@@ -40,7 +40,7 @@ const GuidePrimula = () => {
 
         <PrimulaCard
           icon={logo3}
-          borderColor="purple-100"
+          color="primula-100"
           title="PRÍMULA"
           subtitle="MÓDULO CONTABILIDADE"
           description="Permite que as empresas façam a gestão das suas finanças, cumprir com as obrigações fiscais e manter um controle rigoroso de suas operações contábeis."
@@ -50,7 +50,7 @@ const GuidePrimula = () => {
 
         <PrimulaCard
           icon={logo4}
-          borderColor="purple-100"
+          color="purple-300"
           title="PRÍMULA"
           subtitle="MÓDULO POS"
           description="Permite rastrear todas as transações, manter registos precisos e oferecer aos clientes informações claras e organizadas sobre suas compras."
@@ -60,7 +60,7 @@ const GuidePrimula = () => {
 
         <PrimulaCard
           icon={logo4}
-          borderColor="purple-100"
+          color="purple-300"
           title="PRÍMULA"
           subtitle="MÓDULO COMPRAS"
           description="Controle mais eficaz sobre o processo de compras, desde a seleção de fornecedores até o acompanhamento do inventário e das finanças."
@@ -70,7 +70,7 @@ const GuidePrimula = () => {
 
         <PrimulaCard
           icon={logo4}
-          borderColor="purple-100"
+          color="purple-300"
           title="PRÍMULA"
           subtitle="MÓDULO COMERCIAL"
           description="Permite rastrear todas as transações, manter registos precisos e oferecer aos clientes informações claras e organizadas sobre suas compras."

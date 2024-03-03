@@ -12,7 +12,7 @@ const Contacts = () => {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center py-4 overflow-hidden"
+      className=" min-h-screen flex flex-col items-center justify-center text-center py-4 overflow-hidden"
     >
       <p className="text-primary-0 text-3xl font-bold mb-4">Entre em Contato</p>
       <div className="md:flex md:flex-row md:items-start md:justify-center w-full">

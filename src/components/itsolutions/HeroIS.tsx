@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Showcase1 from "@/lib/img/showcase.svg";
+import Button2 from "../Button2";
+import Icon4 from "@/lib/img/DropdownIcon.svg";
 
 const HeroIS = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-r from-blue-500 to-blue-700 flex flex-col items-center justify-center py-10 px-4 md:py-20 md:px-0">
+    <section className="min-h-screen flex flex-col items-center justify-center py-10 px-4 md:py-20 md:px-0">
       <div className="text-center md:text-left md:flex md:items-center">
         <div className="md:w-1/2 md:order-2 mb-8 md:mb-0 md:ml-16 md:mr-8">
           <Image src={Showcase1} alt="logo" />
@@ -22,10 +24,11 @@ const HeroIS = () => {
               </span>
             </p>
 
-            <p className="text-green-100 text-center md:text-left text-lg md:text-base max-w-md md:max-w-none">
+            <p className="text-green-100 text-center mb-4 md:text-left text-lg md:text-base max-w-md md:max-w-none">
               Desenvolvemos soluções de tecnologia inovadoras para impulsionar o
               crescimento e eficiência das empresas.
             </p>
+            <Button2 type="button" title="Saber Mais" icon={Icon4} />
           </div>
         </div>
       </div>
