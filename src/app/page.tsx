@@ -8,9 +8,16 @@ import ScrollTop from "@/components/ScrollToTop";
 import Chatbot from "@/components/Chatbot";
 import Contacts from "@/components/Contacts";
 import Partners from "@/components/Partners";
+import bgImage from "@/lib/img/mainbg.svg";
 export default function Home() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${bgImage.src})`,
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <Hero />
       <Guide />
       <Portfolio />

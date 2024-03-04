@@ -6,9 +6,10 @@ import logo3 from "@/lib/img/logo3.png";
 import logo4 from "@/lib/img/logo4.png";
 import logo5 from "@/lib/img/logo5.png";
 import logo6 from "@/lib/img/logo6.png";
+import mktech from "@/lib/img/mktech.png";
 
 const Clients = () => {
-  const allLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
+  const allLogos = [mktech, mktech, mktech, mktech, mktech, mktech];
 
   return (
     <section className=" text-center py-16">

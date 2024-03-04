@@ -27,6 +27,8 @@ import {
   FaDatabase,
   FaMagic,
   FaTv,
+  FaReceipt,
+  FaMailBulk,
 } from "react-icons/fa";
 import ModuleButton from "./ModuleButton";
 
@@ -60,7 +62,7 @@ const Guide = () => {
   };
 
   return (
-    <section className=" bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
+    <section className="  min-h-screen flex flex-col items-center justify-center text-center">
       <p className="text-primary-0 text-3xl font-bold mt-20 animate__animated animate__fadeIn">
         CONHEÇA AS NOSSAS SOLUÇÕES PARA A SUA EMPRESA
       </p>
@@ -141,10 +143,10 @@ const Guide = () => {
                   text="Recursos Humanos"
                 />
                 <ModuleButton
-                  icon={FaTv}
+                  icon={FaReceipt}
                   colorFrom="indigo"
                   colorTo="blue"
-                  text="BrandSync"
+                  text="POS"
                 />
                 <ModuleButton
                   icon={FaMoneyBill}
@@ -155,39 +157,39 @@ const Guide = () => {
               </div>
             </div>
           ) : tab === "solutionti" ? (
-            <div className="flex flex-wrap justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-              <div className="flex flex-wrap justify-start items-center">
+            <div class="flex flex-col md:flex-row justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+              <div class="flex flex-wrap justify-center md:justify-start items-center md:w-1/2">
                 <ModuleButton
                   icon={FaGlobe}
                   colorFrom="yellow"
                   colorTo="red"
-                  text="Websites Comerciais & Corporativos"
+                  text="Desenvolvimento de Websites"
                 />
-                <div className="ml-4">
+                <div class="md:ml-4 mt-4 md:mt-0">
                   <ModuleButton
                     icon={FaMobileAlt}
                     colorFrom="green"
                     colorTo="blue"
-                    text="Aplicativos para Celulares"
+                    text="Desenvolvimento de Aplicativos Mobile"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-wrap justify-end items-center">
-                <div className="mr-4">
+              <div class="flex flex-wrap justify-center md:justify-end items-center md:w-1/2 mt-4 md:mt-0">
+                <div class="md:mr-4">
                   <ModuleButton
                     icon={FaDesktop}
                     colorFrom="indigo"
                     colorTo="blue"
-                    text="Sistemas de Gestão para Empresas"
+                    text="Desenvolvimento de Sistemas de Gestão"
                   />
                 </div>
-                <div className="lg:m-0 mr-4">
+                <div class="md:mr-4 mt-4 md:mt-0">
                   <ModuleButton
-                    icon={FaCogs}
+                    icon={FaMailBulk}
                     colorFrom="purple"
                     colorTo="pink"
-                    text="Arquitetura de Softwares"
+                    text="E-Mails Corporativos"
                   />
                 </div>
               </div>

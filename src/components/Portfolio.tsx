@@ -6,7 +6,7 @@ import Button2 from "./Button2";
 
 const Portfolio = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-blue-700 min-h-screen flex flex-col items-center justify-center text-center">
+    <section className=" min-h-screen flex flex-col items-center justify-center text-center">
       <p className="text-primary-0 text-3xl font-bold mb-8">
         TRABALHOS DESENVOLVIDOS POR NÓS
       </p>

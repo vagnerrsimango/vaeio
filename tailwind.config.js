@@ -91,7 +91,7 @@ module.exports = {
           50: "#FEC601",
         },
         primula: {
-          100: "#1E999F",
+          300: "#1E999F",
         },
         secondary: {
           DEFAULT: "#FFFFFF",

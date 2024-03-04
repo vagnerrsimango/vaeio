@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <div
+        className="bg-gradient-to-r from-blue-300 to-blue-500"
         style={{
-          backgroundColor: "#0B0F60",
           width: "100%",
           height: "100%",
         }}

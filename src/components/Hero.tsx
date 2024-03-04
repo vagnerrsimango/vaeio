@@ -5,7 +5,7 @@ import "@/app/styles/animations.css";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r min-h-screen from-blue-500 to-blue-700 container items-center justify-center flex flex-col py-10 pb-4 md:gap-28 lg:py-20 xl:flex-row animate-fade-in-up">
+    <section className="  container items-center justify-center flex flex-col py-10 pb-4 md:gap-28 lg:py-20 xl:flex-row animate-fade-in-up">
       <div className="flex justify-center align-middle transition-all duration-500 transform-gpu hover:scale-105 ">
         <Image
           src={Circles}
