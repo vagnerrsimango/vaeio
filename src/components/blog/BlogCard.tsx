@@ -1,60 +1,51 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
-import Button3 from "../Button3";
-import logo4 from "@/lib/img/modlog4.svg";
+import Link from "next/link";
+import { FaUser } from "react-icons/fa";
 
-interface PrimulaCardProps {
-  imageSrc: string;
-  tags: string;
-  date: string;
-  borderColor: string;
+interface Post {
+  id: number;
   title: string;
-  description: string;
-  authorIconSrc: string;
-  authorName: string;
-  authorProfession: string;
+  author: string;
+  date: string;
+  image: string;
+  content: string;
 }
 
-const BlogCard: React.FC<PrimulaCardProps> = ({
-  imageSrc,
-  tags,
-  date,
-  borderColor,
-  title,
-  description,
-  authorIconSrc,
-  authorName,
-  authorProfession,
-}) => {
-  useEffect(() => {
-    const cards = document.querySelectorAll(".primula-card");
-    cards.forEach((card, index) => {
-      card.classList.add(`animate__delay-${index + 1}s`);
-    });
-  }, []);
-
+const BlogCard: React.FC<{ post: Post }> = ({ post }) => {
   return (
-    <div className="flex flex-col items-center h-30 w-60 m-10 p-4 bg-gradient-radial">
-      <Image src={imageSrc} alt="logo" className="mb-2" />{" "}
-      <div className="text-center">
-        <p className="text-primary-0 mt-2 text-sm">
-          {tags} - {date}
-        </p>
-        <p className="text-primary-0 mt-2 font-bold text-sm">{title}</p>
-      </div>
-      <div className={`mt-2 p-2 mb-4 text-center`}>
-        <p className="text-gray-30 text-xs">{description}</p>
-      </div>
-      <div className="flex items-center mt-2 text-primary-0">
-        <div className="rounded-full overflow-hidden mr-2">
-          <Image src={authorIconSrc} alt="author icon" className="w-8 h-8" />
+    <Link href={`/article/`}>
+      <div className="block bg-blue-500 bg-opacity-75 rounded-lg shadow-xl overflow-hidden border-4 border-blue-400 transition duration-300 transform hover:scale-105 cursor-pointer">
+        <div className="relative h-48">
+          <Image
+            src={post.image}
+            alt="Blog Post"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
-        <div className="text-left">
-          <p className="text-xs">{authorName}</p>
-          <p className="text-xs">{authorProfession}</p>
+        {/* Blog Content */}
+        <div className="p-6">
+          {/* Blog Title */}
+          <h2 className="text-2xl font-semibold text-white mb-2">
+            {post.title}
+          </h2>
+          {/* Blog Meta */}
+          <div className="flex items-center text-white mb-2">
+            <FaUser className="mr-1" />
+            <span>{post.author}</span>
+          </div>
+          {/* Blog Date */}
+          <p className="text-sm text-white mb-4">{post.date}</p>
+          {/* Blog Excerpt */}
+          <p className="text-white">{post.content}</p>
+          {/* Read More Button */}
+          <button className="mt-4 bg-white text-blue-500 hover:bg-blue-600 hover:text-white font-semibold py-2 px-4 rounded">
+            Ler Mais
+          </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
