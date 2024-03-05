@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaUser } from "react-icons/fa";
-import author from "@/lib/img/miacouto.jpg";
+import author from "@/lib/img/cybersecurity.jpeg";
 import bgImage from "@/lib/img/blog2.svg";
 
 const AllArticles = ({ articles }) => {
@@ -71,14 +71,7 @@ const AllArticles = ({ articles }) => {
   ];
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bgImage.src})`,
-        width: "100%",
-        height: "100%",
-      }}
-      className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8"
-    >
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8">
       <div className="max-w-4xl w-full px-4 pt-16">
         {dummyArticles.map((article) => (
           <div key={article.id} className="mb-8 flex flex-col md:flex-row">

@@ -52,7 +52,7 @@ const PrimulaCard: React.FC<PrimulaCardProps> = ({
 
       <Button
         type="button"
-        className={`flex items-center rounded-lg gap-4 mr-6 h-10 bg-${bgColor} bg-opacity-10 w-full `}
+        className={`flex items-center rounded-lg gap-4 mr-6 h-10 bg-primary-800 bg-opacity-10 w-full `}
         title="Saber Mais"
         onClick={() => setShowModal(true)}
       >
@@ -63,12 +63,12 @@ const PrimulaCard: React.FC<PrimulaCardProps> = ({
         </label>
       </Button>
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed p-40 inset-0 flex items-center justify-center z-50">
           <div
             className="absolute inset-0 bg-black opacity-50"
             onClick={() => setShowModal(false)}
           ></div>
-          <div className="relative bg-white p-8 rounded-lg shadow-xl z-10 max-w-md">
+          <div className="relative bg-white  p-8 rounded-lg shadow-xl z-10 max-w-3xl">
             <div className="mb-6">
               <div className="flex items-center justify-between mb-4">
                 <h1 className={`text-black text-2xl font-bold`}>PRÍMULA</h1>

@@ -31,6 +31,7 @@ import {
   FaMailBulk,
 } from "react-icons/fa";
 import ModuleButton from "./ModuleButton";
+import Link from "next/link";
 
 const Guide = () => {
   const [selectBtn, setSelectBtn] = useState(Showcase2);
@@ -157,15 +158,16 @@ const Guide = () => {
               </div>
             </div>
           ) : tab === "solutionti" ? (
-            <div class="flex flex-col md:flex-row justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-              <div class="flex flex-wrap justify-center md:justify-start items-center md:w-1/2">
+            <div className="flex flex-col md:flex-row justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+              <p className="text-2xl font-bold mb-6">Principais Serviços</p>
+              <div className="flex flex-wrap justify-center md:justify-start items-center md:w-1/2">
                 <ModuleButton
                   icon={FaGlobe}
                   colorFrom="yellow"
                   colorTo="red"
                   text="Desenvolvimento de Websites"
                 />
-                <div class="md:ml-4 mt-4 md:mt-0">
+                <div className="md:ml-4 mt-4 md:mt-0">
                   <ModuleButton
                     icon={FaMobileAlt}
                     colorFrom="green"
@@ -175,8 +177,8 @@ const Guide = () => {
                 </div>
               </div>
 
-              <div class="flex flex-wrap justify-center md:justify-end items-center md:w-1/2 mt-4 md:mt-0">
-                <div class="md:mr-4">
+              <div className="flex flex-wrap justify-center md:justify-end items-center md:w-1/2 mt-4 md:mt-0">
+                <div className="md:mr-4">
                   <ModuleButton
                     icon={FaDesktop}
                     colorFrom="indigo"
@@ -184,7 +186,7 @@ const Guide = () => {
                     text="Desenvolvimento de Sistemas de Gestão"
                   />
                 </div>
-                <div class="md:mr-4 mt-4 md:mt-0">
+                <div className="md:mr-4 mt-4 md:mt-0">
                   <ModuleButton
                     icon={FaMailBulk}
                     colorFrom="purple"
@@ -212,7 +214,10 @@ const Guide = () => {
               </p>
             </div>
           ) : null}
-          <Button2 type="button" title="Saber Mais" icon={Icon4} />
+          {/* <Link href="/primula">
+            {" "}
+            <Button2 type="button" title="Saber Mais" icon={Icon4} />
+          </Link> */}
         </div>
 
         <div className="lg:w-1/2 p-8 animate__animated animate__fadeInRight">

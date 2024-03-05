@@ -23,7 +23,7 @@ export default function Home() {
         <HeroIS />
         {/* <PreGuide /> */}
         <GuideIS />
-        <Clients />
+        <Partners />
         <Contacts />
         <ScrollTop />
       </div>

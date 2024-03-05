@@ -22,7 +22,6 @@ export default function Home() {
       <Guide />
       <Portfolio />
       <Partners />
-      <Clients />
       <Contacts />
       <ScrollTop />
       <Chatbot />

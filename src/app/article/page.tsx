@@ -2,19 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaUser } from "react-icons/fa";
-import author from "@/lib/img/miacouto.jpg";
+import author from "@/lib/img/cybersecurity.jpeg";
 import bgImage from "@/lib/img/blog2.svg";
 
 const ExpandedBlogPage = ({ post }) => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${bgImage.src})`,
-        width: "100%",
-        height: "100%",
-      }}
-      className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8"
-    >
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center py-8">
       <div className="max-w-4xl w-full px-4 pt-16">
         {/* Imagem do Blog */}
         <div className="relative h-96 mb-8">

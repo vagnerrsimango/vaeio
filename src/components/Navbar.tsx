@@ -20,15 +20,20 @@ import {
 } from "@nextui-org/react";
 import useNavScroll from "@/hooks/useNavScroll";
 
-const menuItems = ["Primula", "Soluções TI", "Consultoria", "Blog"];
+const menuItems = ["Soluções TI", "Primula", "Consultoria", "Blog"];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { scroll } = useNavScroll();
   const pathname = usePathname();
+  const router = useRouter();
 
   const isPageActive = (path: string) => {
     return pathname === path;
+  };
+
+  const handleConsultoriaClick = () => {
+    router.push("https://afonso.vaeio.co/");
   };
 
   return (
@@ -60,17 +65,26 @@ export default function Header() {
               item === "Soluções TI" ? "/itsolutions" : `/${item.toLowerCase()}`
             )}
           >
-            <Link
-              color="secondary"
-              href={
-                item === "Soluções TI"
-                  ? "/itsolutions"
-                  : `/${item.toLowerCase()}`
-              }
-              aria-current="page"
-            >
-              {item}
-            </Link>
+            {item === "Consultoria" ? (
+              <button
+                onClick={handleConsultoriaClick}
+                className="text-secondary hover:text-primary-400"
+              >
+                {item}
+              </button>
+            ) : (
+              <Link
+                color="secondary"
+                href={
+                  item === "Soluções TI"
+                    ? "/itsolutions"
+                    : `/${item.toLowerCase()}`
+                }
+                aria-current="page"
+              >
+                {item}
+              </Link>
+            )}
           </NavbarItem>
         ))}
       </NavbarContent>

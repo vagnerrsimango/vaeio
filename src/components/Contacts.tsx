@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import Button2 from "./Button2";
 import Icon4 from "@/lib/img/DropdownIcon.svg";
+import Link from "next/link";
 
 const Contacts = () => {
   return (
@@ -29,10 +30,26 @@ const Contacts = () => {
             />
           </div>
           <div className="flex items-center justify-center mb-4">
-            <FaWhatsapp className="text-primary-0 mx-4 text-4xl hover:text-gray-200 transition-colors duration-300 ease-in-out" />
-            <FaFacebook className="text-primary-0 mx-4 text-4xl hover:text-gray-200 transition-colors duration-300 ease-in-out" />
-            <FaLinkedin className="text-primary-0 mx-4 text-4xl hover:text-gray-200 transition-colors duration-300 ease-in-out" />
-            <FaInstagram className="text-primary-0 mx-4 text-4xl hover:text-gray-200 transition-colors duration-300 ease-in-out" />
+            <Link href="#">
+              <div className="mx-4 hover:scale-110 transition-transform">
+                <FaWhatsapp className="text-4xl text-white hover:text-green-500" />
+              </div>
+            </Link>
+            <Link href="#">
+              <div className="mx-4 hover:scale-110 transition-transform">
+                <FaFacebook className="text-4xl text-white hover:text-blue-300" />
+              </div>
+            </Link>
+            <Link href="#">
+              <div className="mx-4 hover:scale-110 transition-transform">
+                <FaLinkedin className="text-4xl text-white hover:text-blue-300" />
+              </div>
+            </Link>
+            <Link href="#">
+              <div className="mx-4 hover:scale-110 transition-transform">
+                <FaInstagram className="text-4xl text-white hover:text-purple-500" />
+              </div>
+            </Link>
           </div>
         </div>
 

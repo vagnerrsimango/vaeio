@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
+import bgImage from "@/lib/img/stacks.svg";
 import {
   SiHtml5,
   SiCss3,
@@ -50,6 +51,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <motion.div
+      style={{
+        backgroundImage: `url(${bgImage.src})`,
+        width: "100%",
+        height: "100%",
+      }}
       className="relative flex flex-col items-center justify-between bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-6 shadow-lg hover:shadow-xl cursor-pointer transform hover:scale-105 transition duration-300 ease-in-out"
       whileHover={{ scale: 1.05 }}
     >
