@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   const handleConsultoriaClick = () => {
-    router.push("https://afonso.vaeio.co/");
+    router.push("/consultoria");
   };
 
   return (

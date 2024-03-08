@@ -15,7 +15,7 @@ const PrimulaModal: React.FC<PrimulaModalProps> = ({ onClose, children }) => {
       <div className="bg-white p-8 rounded-lg shadow-xl z-10">
         {children}
         <Button type="button" onClick={onClose}>
-          Fechareee
+          Fechar
         </Button>
       </div>
     </div>
