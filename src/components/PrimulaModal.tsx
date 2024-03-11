@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/react";
 
 interface PrimulaModalProps {
   onClose: () => void;
+  children?: React.ReactNode;
 }
 
 const PrimulaModal: React.FC<PrimulaModalProps> = ({ onClose, children }) => {

@@ -11,7 +11,6 @@ import {
   SiFlutter,
   SiSwift,
   SiLaravel,
-  SiAndroid,
   SiAndroidstudio,
 } from "react-icons/si";
 

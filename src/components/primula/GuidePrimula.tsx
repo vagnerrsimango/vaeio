@@ -4,9 +4,12 @@ import logo2 from "@/lib/img/modlog2.svg";
 import logo3 from "@/lib/img/modlog3.svg";
 import logo4 from "@/lib/img/modlog4.svg";
 import PrimulaCard from "./PrimulaCard";
+import useEmblaCarousel from "embla-carousel-react";
 import "animate.css";
 
 const GuidePrimula = () => {
+  const [emblaRef] = useEmblaCarousel();
+
   return (
     <section className="text-center">
       <p className="text-primary-0 text-3xl font-bold mb-8 md:mb-16">

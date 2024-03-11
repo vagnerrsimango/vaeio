@@ -14,7 +14,7 @@ const Partners = () => {
   return (
     <section className=" text-center py-16">
       <p className="text-primary-0 text-4xl font-bold mb-8 md:mb-12">
-        CASOS DE SUCESSO
+        NOSSOS PARCEIROS
       </p>
       <p className="text-white text-lg mx-auto max-w-md mb-8 md:mb-12">
         Trabalhamos em parceria com diversas empresas de todos os portes,
