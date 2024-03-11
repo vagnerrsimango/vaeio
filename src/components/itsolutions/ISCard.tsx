@@ -43,7 +43,7 @@ const ISCard: React.FC<PrimulaCardProps> = ({
         <p className="text-primary-0 text-left text-xs">{description}</p>
       </div>
 
-      <Button3 type="button" title="Saber Mais" icon={Icon4} />
+      {/* <Button3 type="button" title="Saber Mais" icon={Icon4} /> */}
     </div>
   );
 };

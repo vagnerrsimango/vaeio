@@ -13,13 +13,6 @@ const HeroPrimula = () => {
       }}
       className="min-h-screen mb-10 flex flex-col items-center justify-center py-10 px-4 md:py-20 md:px-0"
     >
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
-          <div className="embla__slide">Slide 1</div>
-          <div className="embla__slide">Slide 2</div>
-          <div className="embla__slide">Slide 3</div>
-        </div>
-      </div>
       <div className="text-center md:text-left md:flex md:items-center">
         <div className="md:w-1/2 md:order-2 mb-8 md:mb-0 md:ml-16 md:mr-8 hover:scale-110">
           <div className="inline-block">
