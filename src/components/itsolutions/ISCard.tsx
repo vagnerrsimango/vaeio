@@ -32,9 +32,11 @@ const ISCard: React.FC<PrimulaCardProps> = ({
       className={`border-${borderColor}-50 border rounded-lg m-6 p-4 primula-card animate__animated animate__fadeInDown`}
     >
       <div className="flex items-start mb-2">
-        <Image {...icon} alt="logo" className="mr-2" />
+        <div className="mr-2">
+          <Image {...icon} alt="logo" />
+        </div>
         <div className="text-left">
-          <p className="text-primary-0 mt-2 text-xs">{title}</p>
+          <p className="text-primary-0 text-xs mb-1">{title}</p>
           <p className="text-primary-0 font-bold text-sm">{subtitle}</p>
         </div>
       </div>

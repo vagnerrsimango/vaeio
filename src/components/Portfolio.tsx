@@ -1,46 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import Button2 from "./Button2";
-import Icon4 from "@/lib/img/DropdownIcon.svg";
+
 import GeomeLogo from "@/lib/img/GeomeLogo.svg";
 import MJCLogo from "@/lib/img/MJCLogo.svg";
 import Queemo from "@/lib/img/Queemo.svg";
-
-interface Project {
-  title: string;
-  description: string;
-  image: any; // Replace 'any' with the correct type for the image
-  link: string;
-}
-
-const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
-  return (
-    <div className="w-80 h-96 p-4 rounded-lg shadow-md m-10 overflow-hidden flex flex-col">
-      <div className="h-48 relative">
-        <Image
-          src={project.image}
-          alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg"
-        />
-      </div>
-      <div className="flex-grow flex flex-col justify-between">
-        <div className="flex-grow">
-          <h2 className="text-primary-0 text-xl font-semibold mb-2 overflow-hidden">
-            {project.title}
-          </h2>
-          <p className="text-primary-0 mb-4 overflow-hidden">
-            {project.description}
-          </p>
-        </div>
-        <div>
-          <Button2 type="button" title="Saber Mais" icon={Icon4} />
-        </div>
-      </div>
-    </div>
-  );
-};
+import PortfolioCard from "./PortfolioCard";
 
 const Portfolio = () => {
   const projects: Project[] = [
@@ -74,7 +37,7 @@ const Portfolio = () => {
       </p>
       <div className="flex flex-wrap justify-center">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <PortfolioCard key={index} project={project} />
         ))}
       </div>
     </section>

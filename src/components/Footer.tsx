@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="/terms">Termos e Condições | Cookies</a>
           </p>
           <p className="text-sm hover:font-bold text-primary-0 ">
-            &copy; 2023 VAE.IO
+            &copy; 2024 VAE.IO
           </p>
           <p className="text-sm hover:font-bold text-primary-0 hidden sm:block ">
             Todos os direitos reservados.

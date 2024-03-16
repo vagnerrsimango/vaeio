@@ -14,20 +14,22 @@ const HeroC = () => {
         <div className="md:w-1/2 md:order-1 md:ml-20">
           <p className="text-white text-4xl md:text-3xl lg:text-6xl font-outfit font-light mb-4">
             <span className="text-green-100 font-extralight">
-              CONSULTORIA FINANCEIRA
+              CONSULTORIA DE EMPRESAS
             </span>
           </p>
           <div className="flex flex-col items-start">
             <p className="text-white text-4xl md:text-3xl lg:text-3xl font-medium mb-6">
               <span className="text-primary-0 text-left text-3xl font-medium">
-                Gestão Financeira Inteligente para sua Empresa
+                Desbloqueie o Potencial de Sua Empresa com Nossa Consultoria de
+                Gestão
               </span>
             </p>
 
             <p className="text-green-100 text-center mb-4 md:text-left text-lg md:text-base max-w-md md:max-w-none">
-              Oferecemos soluções de consultoria financeira estratégica para
-              otimizar a gestão financeira e maximizar os resultados da sua
-              empresa.
+              Com uma abordagem personalizada e orientada para resultados, nossa
+              equipe de especialistas trabalhará em estreita colaboração com
+              você para identificar oportunidades de melhoria, resolver desafios
+              e alcançar novos patamares de sucesso.
             </p>
             <Button2 type="button" title="Saber Mais" icon={Icon4} />
           </div>

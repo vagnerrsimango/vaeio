@@ -63,7 +63,7 @@ const PrimulaCard: React.FC<PrimulaCardProps> = ({
         </label>
       </Button>
       {showModal && (
-        <div className="fixed p-40 inset-0 flex items-center justify-center z-50">
+        <div className="fixed p-40 animate_backInUp inset-0 flex items-center justify-center z-50">
           <div
             className="absolute inset-0 bg-black opacity-50"
             onClick={() => setShowModal(false)}
