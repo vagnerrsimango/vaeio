@@ -29,6 +29,10 @@ import {
   FaTv,
   FaReceipt,
   FaMailBulk,
+  FaProjectDiagram,
+  FaThinkPeaks,
+  FaCrosshairs,
+  FaWallet,
 } from "react-icons/fa";
 import ModuleButton from "./ModuleButton";
 import Link from "next/link";
@@ -158,60 +162,82 @@ const Guide = () => {
               </div>
             </div>
           ) : tab === "solutionti" ? (
-            <div className="flex flex-col md:flex-row justify-center items-center text-primary-0 mb-6 transition-all duration-300">
-              <p className="text-2xl font-bold mb-6">Principais Serviços</p>
-              <div className="flex flex-wrap justify-center md:justify-start items-center md:w-1/2">
-                <ModuleButton
-                  icon={FaGlobe}
-                  colorFrom="yellow"
-                  colorTo="red"
-                  text="Desenvolvimento de Websites"
-                />
-                <div className="md:ml-4 mt-4 md:mt-0">
+            <div className="mb-6 text-primary-0">
+              <p className="text-2xl font-bold mb-6">SOLUÇÕES DE TECNOLOGIA</p>
+              <p className="font-normal mb-6">
+                Desenvolvemos soluções de tecnologia inovadoras para impulsionar
+                o crescimento e eficiência das empresas.
+              </p>
+              <p className="text-2xl font-bold mb-6">Principais Módulos</p>
+              <div className="flex flex-wrap justify-center md:justify-between items-center">
+                {/* Left section */}
+                <div className="flex flex-wrap justify-center md:justify-start items-center md:w-1/2 mt-4 md:mt-0">
                   <ModuleButton
-                    icon={FaMobileAlt}
-                    colorFrom="green"
-                    colorTo="blue"
-                    text="Desenvolvimento de Aplicativos Mobile"
+                    icon={FaGlobe}
+                    colorFrom="yellow"
+                    colorTo="red"
+                    text="Desenvolvimento de Websites"
                   />
+                  <div className="md:ml-4 mt-4 md:mt-0">
+                    <ModuleButton
+                      icon={FaMobileAlt}
+                      colorFrom="green"
+                      colorTo="blue"
+                      text="Desenvolvimento de Aplicativos Mobile"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex flex-wrap justify-center md:justify-end items-center md:w-1/2 mt-4 md:mt-0">
-                <div className="md:mr-4">
-                  <ModuleButton
-                    icon={FaDesktop}
-                    colorFrom="indigo"
-                    colorTo="blue"
-                    text="Desenvolvimento de Sistemas de Gestão"
-                  />
-                </div>
-                <div className="md:mr-4 mt-4 md:mt-0">
-                  <ModuleButton
-                    icon={FaMailBulk}
-                    colorFrom="purple"
-                    colorTo="pink"
-                    text="E-Mails Corporativos"
-                  />
+                {/* Right section */}
+                <div className="flex flex-wrap justify-center md:justify-end items-center md:w-1/2 mt-4 md:mt-0">
+                  <div className="md:mr-4">
+                    <ModuleButton
+                      icon={FaDesktop}
+                      colorFrom="indigo"
+                      colorTo="blue"
+                      text="Desenvolvimento de Sistemas de Gestão"
+                    />
+                  </div>
+                  <div className="md:mr-4 mt-4 md:mt-0">
+                    <ModuleButton
+                      icon={FaMailBulk}
+                      colorFrom="purple"
+                      colorTo="pink"
+                      text="E-Mails Corporativos"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           ) : tab === "consultoria" ? (
-            <div>
-              <p className="text-primary-0 text-2xl font-bold mb-6">
-                Deixe a sua gestão conosco
+            <div className="mb-6 text-primary-0">
+              <p className="text-2xl font-bold mb-6">CONSULTORIA DE EMPRESAS</p>
+              <p className="font-normal mb-6">
+                Desbloqueie o Potencial de Sua Empresa com Nossa Consultoria de
+                Gestão
               </p>
-              <p className="text-primary-0 mb-6">
-                Nossa expertise em gestão financeira, combinada ao compromisso
-                inabalável com o sucesso de nossos clientes, você pode confiar
-                em nós para fornecer soluções financeiras inteligentes e
-                estratégicas que impulsionarão sua estabilidade financeira e o
-                crescimento de seus negócios.
-              </p>
-              <p className="text-primary-0 mb-6">
-                Entre em contato connosco hoje mesmo para começar a trilhar o
-                caminho para uma gestão financeira sólida e eficaz.
-              </p>
+              <p className="text-2xl font-bold mb-6">Principais Módulos</p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-center items-center text-primary-0 mb-6 transition-all duration-300">
+                <ModuleButton
+                  icon={FaWallet}
+                  colorFrom="yellow"
+                  colorTo="red"
+                  text="Serviço de Gestão Financeira"
+                />
+                <ModuleButton
+                  icon={FaProjectDiagram}
+                  colorFrom="green"
+                  colorTo="blue"
+                  text="Serviço de Gestão de Projectos"
+                />
+                <ModuleButton
+                  icon={FaCrosshairs}
+                  colorFrom="blue"
+                  colorTo="indigo"
+                  text="Serviço de Gestão Estratégica"
+                />
+              </div>
             </div>
           ) : null}
           {/* <Link href="/primula">

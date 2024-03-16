@@ -38,7 +38,6 @@ const iconMap: { [key: string]: ReactNode } = {
   Java: <SiAndroidstudio className="text-2xl mr-1" />,
   Gmail: <SiGmail className="text-2xl mr-1" />,
   Outlook: <SiMicrosoftoutlook className="text-2xl mr-1" />,
-  Gmail: <SiGmail className="text-2xl mr-1" />,
   "Microsoft Exchange": <SiGooglecloud className="text-2xl mr-1" />,
   "Google Workspace": <SiGooglecloud className="text-2xl mr-1" />,
   "React Native": <SiReact className="text-2xl mr-1" />,

@@ -1,15 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import logo1 from "@/lib/img/logo1.png";
-import logo2 from "@/lib/img/logo2.png";
-import logo3 from "@/lib/img/logo3.png";
-import logo4 from "@/lib/img/logo4.png";
-import logo5 from "@/lib/img/logo5.png";
-import logo6 from "@/lib/img/logo6.png";
+import GeomeLogo from "@/lib/img/GeomeLogo.svg";
+import MJCLogo from "@/lib/img/MJCLogo.svg";
 import mktech from "@/lib/img/mktech.png";
+import conedarte from "@/lib/img/conedarte.png";
 
 const Partners = () => {
-  const allLogos = [mktech, mktech, mktech, mktech];
+  const allLogos = [mktech, MJCLogo, conedarte, GeomeLogo];
 
   return (
     <section className=" text-center py-16">
