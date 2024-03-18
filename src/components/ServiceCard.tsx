@@ -23,7 +23,7 @@ interface ServiceCardProps {
   icon: ReactNode;
   title: string;
   description: string;
-  features?: { title: string; description: string }[];
+  features: { title: string; description: string }[];
   benefits?: string[];
   technologies?: string[];
 }
