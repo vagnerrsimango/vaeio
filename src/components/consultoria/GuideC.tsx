@@ -35,7 +35,7 @@ const GuideC = () => {
             <>
               <div className="text-left p-8 rounded-lg shadow-md">
                 <strong className="text-xl">
-                  Reestruturação de Créditos Bancários
+                  1. Reestruturação de Créditos Bancários
                 </strong>
                 <p className="my-4">
                   Nossa equipe altamente qualificada está pronta para ajudá-lo a
@@ -47,22 +47,22 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Soluções Personalizadas</strong>: Nossa abordagem
+                  <strong>a) Soluções Personalizadas</strong>: Nossa abordagem
                   personalizada significa que criamos estratégias específicas
                   para atender às suas necessidades únicas.
                 </p>
                 <p className="mb-2">
-                  <strong>Redução de Taxas de Juros</strong>: Com nossa ajuda,
-                  podemos negociar com os bancos para reduzir suas taxas de
-                  juros e aliviar sua carga financeira.
+                  <strong>b) Redução de Taxas de Juros</strong>: Com nossa
+                  ajuda, podemos negociar com os bancos para reduzir suas taxas
+                  de juros e aliviar sua carga financeira.
                 </p>
                 <p className="mb-2">
-                  <strong>Prazos de Pagamento Estendidos</strong>: Prolongar os
-                  prazos de pagamento pode tornar suas parcelas mais
+                  <strong>c) Prazos de Pagamento Estendidos</strong>: Prolongar
+                  os prazos de pagamento pode tornar suas parcelas mais
                   gerenciáveis, permitindo que você respire mais facilmente.
                 </p>
                 <p className="mb-2">
-                  <strong>Consolidação de Dívidas</strong>: Consolidar suas
+                  <strong>d) Consolidação de Dívidas</strong>: Consolidar suas
                   dívidas em um único pagamento mensal pode simplificar sua vida
                   e economizar dinheiro.
                 </p>
@@ -70,7 +70,7 @@ const GuideC = () => {
 
               <div className="text-left p-8 rounded-lg shadow-md mt-8">
                 <strong className="text-xl">
-                  Análise e Reporte de Demonstração Financeira
+                  2. Análise e Reporte de Demonstração Financeira
                 </strong>
                 <p className="my-4">
                   Compreender o estado financeiro de sua empresa é fundamental
@@ -83,27 +83,27 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Análise Abrangente</strong>: Identificamos tendências,
-                  pontos fortes e áreas de melhoria para orientar suas
-                  estratégias futuras.
+                  <strong>a) Análise Abrangente</strong>: Identificamos
+                  tendências, pontos fortes e áreas de melhoria para orientar
+                  suas estratégias futuras.
                 </p>
                 <p className="mb-2">
-                  <strong>Insights Valiosos</strong>: Análise de riscos e
+                  <strong>b) Insights Valiosos</strong>: Análise de riscos e
                   oportunidades que podem impactar sua empresa.
                 </p>
                 <p className="mb-2">
-                  <strong>Decisões Informadas</strong>: Fornecimento de
+                  <strong>c) Decisões Informadas</strong>: Fornecimento de
                   relatórios para tomada de decisões informadas e estratégicas.
                 </p>
                 <p className="mb-2">
-                  <strong>Crescimento Sustentável</strong>: Nosso objetivo é
+                  <strong>d) Crescimento Sustentável</strong>: Nosso objetivo é
                   impulsionar o crescimento sustentável de sua empresa.
                 </p>
               </div>
 
               <div className="text-left p-8 rounded-lg shadow-md mt-8">
                 <strong className="text-xl">
-                  Plano de Financiamento e Investimentos
+                  3. Plano de Financiamento e Investimentos
                 </strong>
                 <p className="my-4">
                   Para alcançar seus objectivos financeiros a longo prazo, é
@@ -117,27 +117,27 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Personalização Total</strong>: Reconhecemos que cada
-                  pessoa tem metas financeiras únicas. É por isso que
+                  <strong>a) Personalização Total</strong>: Reconhecemos que
+                  cada pessoa tem metas financeiras únicas. É por isso que
                   trabalhamos em estreita colaboração com você para criar um
                   plano totalmente personalizado que se alinha com suas ambições
                   e tolerância ao risco.
                 </p>
                 <p className="mb-2">
-                  <strong>Estratégias Eficientes de Investimento</strong>:
+                  <strong>b) Estratégias Eficientes de Investimento</strong>:
                   Nossos especialistas em investimentos analisarão suas metas e
                   perfil de risco para desenvolver estratégias de investimento
                   eficazes que maximizem seus retornos a longo prazo.
                 </p>
                 <p className="mb-2">
-                  <strong>Atingindo Seus Sonhos</strong>: Seja qual for o seu
+                  <strong>c) Atingindo Seus Sonhos</strong>: Seja qual for o seu
                   sonho financeiro, estamos comprometidos em ajudá-lo a
                   alcançá-lo. Desde a aposentadoria tranquila até a realização
                   de grandes projetos, estamos aqui para fornecer orientação e
                   suporte ao longo do caminho.
                 </p>
                 <p className="mb-2">
-                  <strong>Acompanhamento Contínuo</strong>: Estaremos ao seu
+                  <strong>d) Acompanhamento Contínuo</strong>: Estaremos ao seu
                   lado, revisando e ajustando seu plano conforme necessário para
                   garantir que você esteja sempre no caminho certo para alcançar
                   seus objetivos.
@@ -162,7 +162,7 @@ const GuideC = () => {
           dtdescription={
             <>
               <div className="text-left p-8 rounded-lg shadow-md mt-4">
-                <strong className="text-xl">Selo Made in Mozambique</strong>
+                <strong className="text-xl">1. Selo Made in Mozambique</strong>
                 <p className="my-4">
                   Na busca por excelência na execução de projectos em
                   Moçambique, nossa equipe orgulhosamente ajuda aos clientes a
@@ -175,15 +175,15 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Raízes Locais, Impacto Global</strong>: Cada projecto
-                  que empreendemos é mais do que uma simples realização, é uma
-                  celebração da rica cultura e das práticas empresariais únicas
-                  de Moçambique. Com o Selo Made in Mozambique, garantimos que
-                  nossa abordagem seja genuinamente moçambicana, enquanto
-                  alcançamos padrões de classe mundial.
+                  <strong>a) Raízes Locais, Impacto Global</strong>: Cada
+                  projecto que empreendemos é mais do que uma simples
+                  realização, é uma celebração da rica cultura e das práticas
+                  empresariais únicas de Moçambique. Com o Selo Made in
+                  Mozambique, garantimos que nossa abordagem seja genuinamente
+                  moçambicana, enquanto alcançamos padrões de classe mundial.
                 </p>
                 <p className="mb-2">
-                  <strong>Contribuindo para o Crescimento Econômico</strong>:
+                  <strong>b) Contribuindo para o Crescimento Econômico</strong>:
                   Estamos empenhados em impulsionar o crescimento econômico
                   local, fortalecendo a economia de Moçambique por meio de
                   nossos projectos. Ao escolher nossos serviços, você não apenas
@@ -191,21 +191,21 @@ const GuideC = () => {
                   nosso país.
                 </p>
                 <p className="mb-2">
-                  <strong>Desenvolvimento Sustentável</strong>: Estamos
+                  <strong>c) Desenvolvimento Sustentável</strong>: Estamos
                   comprometidos com o desenvolvimento sustentável de Moçambique,
                   garantindo que nossos projetos tenham um impacto positivo
                   duradouro em nossa sociedade e meio ambiente.
                 </p>
                 <p className="mb-2">
-                  <strong>Parceria Confiança</strong>: Trabalhamos em estreita
-                  colaboração com nossos clientes, ouvindo atentamente suas
-                  necessidades e visões.
+                  <strong>d) Parceria Confiança</strong>: Trabalhamos em
+                  estreita colaboração com nossos clientes, ouvindo atentamente
+                  suas necessidades e visões.
                 </p>
               </div>
 
               <div className="text-left p-8 rounded-lg shadow-md mt-4">
                 <strong className="text-xl">
-                  Plano de Gestão da Qualidade - ISO 9001:2015
+                  2. Plano de Gestão da Qualidade - ISO 9001:2015
                 </strong>
                 <p className="my-4">
                   A qualidade é o alicerce de todos os grandes projectos,
@@ -218,25 +218,25 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Padrões Internacionais de Excelência</strong>: Ao
+                  <strong>a) Padrões Internacionais de Excelência</strong>: Ao
                   adotar a norma ISO 9001:2015, a sua empresa estará
                   comprometida em alcançar e manter padrões internacionais de
                   excelência em todos os vossos projectos.
                 </p>
                 <p className="mb-2">
-                  <strong>Acompanhamento Personalizado</strong>: Nossos
+                  <strong>b) Acompanhamento Personalizado</strong>: Nossos
                   projectos são acompanhados de perto pelo cliente, garantindo
                   que suas expectativas sejam não apenas atendidas, mas
                   superadas.
                 </p>
                 <p className="mb-2">
-                  <strong>Melhoria Contínua</strong>: Nosso compromisso com a
+                  <strong>c) Melhoria Contínua</strong>: Nosso compromisso com a
                   melhoria contínua significa que seus projectos são
                   constantemente optimizados e aprimorados ao longo do tempo.
                 </p>
                 <p className="mb-2">
-                  <strong>Consistência e Confiabilidade</strong>: Com o Plano de
-                  Gestão da Qualidade - ISO 9001:2015, você pode contar com a
+                  <strong>d) Consistência e Confiabilidade</strong>: Com o Plano
+                  de Gestão da Qualidade - ISO 9001:2015, você pode contar com a
                   consistência, confiabilidade e excelência em todas as etapas
                   do seu projeto.
                 </p>
@@ -244,7 +244,7 @@ const GuideC = () => {
 
               <div className="text-left p-8 rounded-lg shadow-md">
                 <strong className="text-xl">
-                  Plano de Gestão do Ambiente – ISO 14001:2015
+                  3. Plano de Gestão do Ambiente – ISO 14001:2015
                 </strong>
                 <p className="my-4">
                   Estamos profundamente comprometidos com a preservação do meio
@@ -256,26 +256,26 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Compromisso com a Sustentabilidade</strong>: A
+                  <strong>a) Compromisso com a Sustentabilidade</strong>: A
                   sustentabilidade está no centro de tudo o que fazemos. A
                   adesão à ISO 14001:2015 demonstra compromisso inabalável em
                   minimizar o impacto ambiental de projectos da empresa e
                   promover práticas sustentáveis.
                 </p>
                 <p className="mb-2">
-                  <strong>Planeamento Responsável</strong>: Nosso objectivo é
+                  <strong>b) Planeamento Responsável</strong>: Nosso objectivo é
                   minimizar o impacto ambiental, desde o planeamento até a
                   conclusão, garantindo que todas as actividades sejam
                   ecologicamente responsáveis.
                 </p>
                 <p className="mb-2">
-                  <strong>Minimização do Impacto Ambiental</strong>: Com o Plano
-                  de Gestão do Ambiente - ISO 14001:2015, você pode ter certeza
-                  de que seu projeto será conduzido de maneira a reduzir
+                  <strong>c) Minimização do Impacto Ambiental</strong>: Com o
+                  Plano de Gestão do Ambiente - ISO 14001:2015, você pode ter
+                  certeza de que seu projeto será conduzido de maneira a reduzir
                   significativamente seu impacto no meio ambiente.
                 </p>
                 <p className="mb-2">
-                  <strong>Promoção de Práticas Sustentáveis</strong>: Além de
+                  <strong>d) Promoção de Práticas Sustentáveis</strong>: Além de
                   minimizar o impacto ambiental, também trabalhamos para
                   promover práticas sustentáveis em todas as áreas de seu
                   negócio. Desde a conservação de recursos naturais até a
@@ -286,7 +286,7 @@ const GuideC = () => {
 
               <div className="text-left  p-8 rounded-lg shadow-md mt-4">
                 <strong className="text-xl">
-                  Gestão de Segurança e Saúde Ocupacional
+                  4. Gestão de Segurança e Saúde Ocupacional
                   <span className="font-bold">– ISO 45001:2018</span>
                 </strong>
                 <p className="my-4">
@@ -299,30 +299,30 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className=" mb-2">
-                  <strong>Compromisso Inabalável</strong>: : Com a ISO
+                  <strong>a) Compromisso Inabalável</strong>: : Com a ISO
                   45001:2018, implementamos um Sistema de Gestão de Segurança e
                   Saúde Ocupacional para garantir que cada pessoa em sua empresa
                   possa trabalhar com confiança e tranquilidade.
                 </p>
                 <p className="mb-2">
-                  <strong>Ambiente de Trabalho Seguro</strong>: Nosso objectivo
-                  é criar um ambiente de trabalho seguro e saudável, onde cada
-                  colaborador se sinta protegido e respeitado, minimizando os
-                  riscos de lesões ou acidentes.
+                  <strong>b) Ambiente de Trabalho Seguro</strong>: Nosso
+                  objectivo é criar um ambiente de trabalho seguro e saudável,
+                  onde cada colaborador se sinta protegido e respeitado,
+                  minimizando os riscos de lesões ou acidentes.
                 </p>
                 <p className="mb-2">
-                  <strong>Proteção de Vidas</strong>: Desde a identificação de
-                  riscos até a implementação de medidas preventivas, nosso
+                  <strong>c) Proteção de Vidas</strong>: Desde a identificação
+                  de riscos até a implementação de medidas preventivas, nosso
                   objetivo é proteger não apenas a segurança física, mas também
                   a saúde mental e emocional de seus colaboradores.
                 </p>
                 <p className="mb-2">
-                  <strong>Parceria Confiável</strong>: Trabalhamos em estreita
-                  colaboração com sua empresa, adaptando nossos serviços às suas
-                  necessidades específicas. Com nossa orientação especializada,
-                  você pode confiar que seu ambiente de trabalho estará em
-                  conformidade com os mais altos padrões de segurança e saúde
-                  ocupacional.
+                  <strong>d) Parceria Confiável</strong>: Trabalhamos em
+                  estreita colaboração com sua empresa, adaptando nossos
+                  serviços às suas necessidades específicas. Com nossa
+                  orientação especializada, você pode confiar que seu ambiente
+                  de trabalho estará em conformidade com os mais altos padrões
+                  de segurança e saúde ocupacional.
                 </p>
               </div>
             </>
@@ -344,7 +344,7 @@ const GuideC = () => {
             <>
               <div className="text-left p-8 rounded-lg shadow-md">
                 <strong className="text-xl">
-                  Planos Estratégicos e de Negócios
+                  1. Planos Estratégicos e de Negócios
                 </strong>
                 <p className="my-4">
                   Com nossos serviços de Gestão Estratégica, você terá a
@@ -357,27 +357,27 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Personalização Total</strong>: Reconhecemos que cada
-                  empresa é única, e é por isso que nossos planos são totalmente
-                  personalizados para atender às suas necessidades específicas.
-                  Desde startups até empresas estabelecidas, adaptamos nossas
-                  estratégias para se alinharem perfeitamente com sua visão e
-                  metas.
+                  <strong>a) Personalização Total</strong>: Reconhecemos que
+                  cada empresa é única, e é por isso que nossos planos são
+                  totalmente personalizados para atender às suas necessidades
+                  específicas. Desde startups até empresas estabelecidas,
+                  adaptamos nossas estratégias para se alinharem perfeitamente
+                  com sua visão e metas.
                 </p>
                 <p className="mb-2">
-                  <strong>Visão Clara para o Futuro</strong>: Identificamos
+                  <strong>b) Visão Clara para o Futuro</strong>: Identificamos
                   oportunidades de crescimento, definimos metas alcançáveis e
                   delineamos estratégias claras para alcançar o sucesso a longo
                   prazo.
                 </p>
                 <p className="mb-2">
-                  <strong>Decisões Informadas</strong>: Com nossos planos
+                  <strong>c) Decisões Informadas</strong>: Com nossos planos
                   estratégicos em mãos, você terá as informações necessárias
                   para tomar decisões fundamentadas e estratégicas em todas as
                   áreas de sua empresa.
                 </p>
                 <p className="mb-2">
-                  <strong>Resultados Sustentáveis</strong>: Nosso objetivo é
+                  <strong>d) Resultados Sustentáveis</strong>: Nosso objetivo é
                   ajudá-lo a alcançar resultados sustentáveis e duradouros. Com
                   uma abordagem estratégica sólida, você estará preparado para
                   enfrentar desafios, aproveitar oportunidades e alcançar
@@ -387,7 +387,7 @@ const GuideC = () => {
 
               <div className="text-left p-8 rounded-lg shadow-md">
                 <strong className="text-xl">
-                  Planos Comerciais e de Marketing
+                  2. Planos Comerciais e de Marketing
                 </strong>
                 <p className="my-4">
                   A conquista de mercado é essencial para o sucesso de qualquer
@@ -403,25 +403,25 @@ const GuideC = () => {
                 </p>
                 <p className="text-lg font-bold mb-2">O Que Esperar?</p>
                 <p className="mb-2">
-                  <strong>Posicionamento Estratégico da Marca</strong>: Nosso
+                  <strong>a) Posicionamento Estratégico da Marca</strong>: Nosso
                   plano visa posicionar sua marca de forma estratégica,
                   destacando seus diferenciais competitivos e conectando-se de
                   forma significativa com seu público-alvo.
                 </p>
                 <p className="mb-2">
-                  <strong>Estratégias de Marketing Inovadoras</strong>:
+                  <strong>b) Estratégias de Marketing Inovadoras</strong>:
                   Utilizamos as últimas tendências e tecnologias de marketing
                   para expandir seu alcance online, criar engajamento com seu
                   público e aumentar as conversões.
                 </p>
                 <p className="mb-2">
-                  <strong>Abordagem Orientada para o Cliente</strong>: Colocamos
-                  seus clientes no centro de nossas estratégias, garantindo que
-                  todas as iniciativas de marketing e vendas sejam projetadas
-                  para atender às suas necessidades e desejos.
+                  <strong>c) Abordagem Orientada para o Cliente</strong>:
+                  Colocamos seus clientes no centro de nossas estratégias,
+                  garantindo que todas as iniciativas de marketing e vendas
+                  sejam projetadas para atender às suas necessidades e desejos.
                 </p>
                 <p className="mb-2">
-                  <strong>Maximize Resultados Comerciais</strong>: Seja
+                  <strong>d) Maximize Resultados Comerciais</strong>: Seja
                   expandindo suas operações, melhorando suas estratégias de
                   vendas ou desenvolvendo campanhas de marketing personalizadas,
                   estamos comprometidos em impulsionar seus resultados
